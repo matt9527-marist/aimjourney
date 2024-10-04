@@ -1,0 +1,135 @@
+body {
+    font-family: 'Lato', sans-serif; /* Apply the Lato font */
+    margin: 0;
+    padding: 0;
+    background-color: rgba(20, 11, 36, 1); /* Background color for the entire page */
+    color: white;
+}
+
+#menu-button {
+    position: fixed;
+    top: 20px; /* Adjust this value for padding from the top */
+    left: 20px; /* Adjust this value for padding from the left */
+    color: white; /* Change color to match your theme */
+    font-size: 25px; /* Increase font size for better visibility */
+    padding: 10px 10px; /* Add padding to create a button effect */
+    background-color: rgba(70,41,86,1); /* Faded background color */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#menu-button:hover {
+    background-color: rgba(138,74,243,1); /* Darker background on hover */
+}
+
+#title {
+    text-align: center; /* Center the text horizontally */
+    margin: 20px 0; /* Add some vertical spacing above and below */
+    font-size: 2.2em; /* Adjust the font size as needed */
+    color: rgba(138,74,243,1);
+}
+
+#app {
+    opacity: 0; /* App starts hidden */
+    transition: opacity 1s ease-in; /* App will fade in */
+}
+
+.show-app {
+    opacity: 1; /* App fully visible */
+}
+
+#chatContainer {
+    display: none; /* Hide the chat container initially */
+    margin: 0 auto; /* Center the container */
+    max-width: 1000px; /* Set a maximum width for the chat area */
+    padding: 20px; /* Add some padding for better spacing */
+    border: 2px solid rgba(238, 74, 243, 1); /* Add a distinct border */
+    border-radius: 10px; /* Optional: add rounded corners */
+    background-color: rgba(20, 11, 36, 1); /* Match the background color */
+}
+
+/* For webkit browsers (Chrome, Safari) */
+#chatContainer::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+#chatContainer::-webkit-scrollbar-track {
+    background: rgba(20, 11, 36, 0.2); /* Background of the scrollbar track */
+}
+
+#chatContainer::-webkit-scrollbar-thumb {
+    background: rgba(238, 74, 243, 0.2); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for thumb */
+}
+
+#chatContainer::-webkit-scrollbar-thumb:hover {
+    background: rgba(138, 74, 243, 0.2); /* Color on hover */
+}
+
+/* For Firefox */
+#chatContainer {
+    scrollbar-width: thin; /* Set the scrollbar width to thin */
+    scrollbar-color: rgba(238, 74, 243, 0.2) rgba(20, 11, 36, 0.2); /* Thumb color and track color */
+}
+
+#chat {
+    max-height: 700px; /* Limit the height of the chat area */
+    overflow-y: auto; /* Enable scrolling if needed */
+    padding: 10px; /* Add some padding inside the chat */
+}
+
+/* Chat input area styling */
+#chatInput {
+    position: fixed;
+    bottom: 50px; /* Adjust this value to raise the input field */
+    left: 0;
+    width: 100%;
+    background-color: rgba(20,11,36,1); /* Background for the input area */
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    border-top: none; /* Ensure there is no border */
+    box-shadow: none; /* Remove any box shadow if present */
+}
+
+#userInput {
+    flex-grow: 1; /* Allow input to grow */
+    padding: 10px; /* Increased padding for larger input field */
+    padding-left: 25px;
+    height: 25px; /* Set a fixed height for the input field */
+    background-color: rgba(40,31,56,1); /* Faded background color */
+    color: white; /* Change text color to white for better contrast */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corners */
+    margin-right: 15px; /* Space between input and button */
+    max-width: 700px; /* Set a maximum width */
+    width: 100%; /* Allow it to take full width up to max-width */
+}
+
+#sendButton {
+    padding: 10px 20px; /* Increased padding for a wider button */
+    background-color: rgba(70,41,86,1); /* Button background color */
+    color: white;
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    min-width: 100px; /* Set a minimum width for the button */
+}
+
+#sendButton:hover {
+    background-color: rgba(138,74,243,1); /* Darker shade on hover */
+}
+
+.message {
+    margin: 10px 0; /* Add vertical spacing between messages */
+}
+
+.user {
+    color: lightgrey; /* Change user text color to light gray */
+}
+
+.bot {
+    color: magenta; /* Change bot text color to light purple (Thistle) */
+}
+

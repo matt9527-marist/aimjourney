@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/helix.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Inline styles for the layout */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            background-color: rgba(20, 11, 36, 1); /* Background color */
+        }
+        #container {
+            display: flex;
+            align-items: center; /* Center vertically */
+            gap: 40px; /* Increased space between loader and menu */
+            margin-left: -150px; /* Slightly adjust for better alignment */
+        }
+        #menu {
+            opacity: 0; /* Menu starts hidden */
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+            align-items: flex-start; /* Align buttons to the left */
+            transition: opacity 1s ease-in; /* Fade-in effect */
+        }
+        #menu h1 {
+            margin: 30px 0; /* Increased space above and below title */
+            text-align: center; /* Center the title */
+            color: rgba(138, 74, 243, 1); /* Title color */
+            font-family: 'Montserrat', sans-serif; /* Use the new font */
+            font-size: 60px; /* Increased font size for prominence */
+            font-weight: bold; /* Ensure bold weight */
+        }
+        #menu h2 {
+            margin: 0; /* No margin for tight spacing */
+            font-size: 24px; /* Increased font size for the subtitle */
+            text-align: center; /* Center the subtitle */
+            color: rgba(238, 74, 243, 1); /* Subtitle color */
+            margin-bottom: 30px; /* Increased margin below subtitle */
+        }
+        button {
+            background-color: rgba(70, 41, 86, 1); /* Button background color */
+            color: white; /* Text color */
+            border: none; /* No border */
+            border-radius: 10px; /* Rounded corners */
+            padding: 12px; /* Increased padding for larger buttons */
+            margin: 10px 0; /* Increased space between buttons */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+            font-size: 24px; /* Increased font size for button text */
+            width: 100%; /* Full width for buttons */
+        }
+        button:hover {
+            background-color: rgba(138, 74, 243, 1); /* Darker background on hover */
+            transform: scale(1.05); /* Slight scale effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <l-helix size="250" speed="2.5" color="magenta"></l-helix> <!-- Your loader -->
+        <div id="menu">
+            <h1>Aim Journey</h1>
+            <h2>Recording every new milestone...</h2> <!-- Subtitle without inline styles -->
+            <button id="chatAssistantButton" onclick="location.href='chat.html'">Chat Assistant</button>
+            <button id="kovaakSetupButton">Kovaak Setup</button>
+            <button id="statsVisualizerButton">Stats Visualizer</button>
+            <button id="achievementsButton">Achievements</button>
+        </div>
+    </div>
+
+    <script>
+        const { ipcRenderer } = require('electron');
+
+        // Show the menu with fade-in effect
+        window.onload = function() {
+            const menuDiv = document.getElementById('menu');
+            menuDiv.style.opacity = 1; // Set opacity to 1 for fade-in effect
+        };
+    </script>
+
+</body>
+</html>

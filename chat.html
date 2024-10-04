@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include the UIBall loader from the CDN -->
+</head>
+<body>
+
+    <!-- Main App UI (hidden by default) -->
+    <div id="menu-button" onclick="location.href='index.html'">
+        &lt;&lt; <!-- Back button -->
+    </div>
+    <div id="app">
+        <h1 id="title">Aim Journey Assistant</h1>
+        <div id="chatContainer"> <!-- Container for title and chat -->
+            <div id="chat"></div>
+        </div>
+    </div>
+
+    <!-- Chat input fixed at the bottom -->
+    <div id="chatInput">
+        <input type="text" id="userInput" placeholder="Type your message..." />
+        <button id="sendButton">Send</button>
+    </div>
+
+    <script>
+        const { ipcRenderer } = require('electron');
+    
+        // Show app content immediately since loader is removed
+        document.getElementById('app').style.opacity = 1; // Set app opacity to 1 to show it immediately
+    
+        // Function to send a message
+        function sendMessage() {
+            const userInput = document.getElementById('userInput').value;
+            const chatContainer = document.getElementById('chatContainer');
+            
+            if (userInput) {
+                // Show chat container if it's currently hidden
+                if (chatContainer.style.display === 'none' || chatContainer.style.display === '') {
+                    chatContainer.style.display = 'block'; // Show the chat container
+                }
+    
+                addMessage('user', userInput);
+                ipcRenderer.send('send-message', userInput);
+                document.getElementById('userInput').value = '';
+            }
+        }
+    
+        document.getElementById('sendButton').addEventListener('click', sendMessage);
+    
+        // Event listener for pressing the Enter key
+        document.getElementById('userInput').addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    
+        ipcRenderer.on('chat-response', (event, response) => {
+            addMessage('bot', response);
+        });
+    
+        function addMessage(sender, message) {
+            const chatDiv = document.getElementById('chat');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message ' + sender;
+            messageDiv.textContent = (sender === 'user' ? 'You: ' : 'Bot: ') + message;
+            chatDiv.appendChild(messageDiv);
+            chatDiv.scrollTop = chatDiv.scrollHeight; // Scroll to the bottom
+        }
+    </script>
+
+</body>
+</html>
