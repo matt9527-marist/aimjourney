@@ -37,9 +37,11 @@
    ```bash
    git clone https://github.com/yourusername/AimJourney.git
    cd AimJourney
-2. ```bash
+2. Start the server on local host:
+   ```bash
    node server.js
-3. ```bash
+3. Start the client:
+   ```bash
    npm run start
 
 ### Prerequisites:
