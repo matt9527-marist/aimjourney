@@ -64,6 +64,7 @@
     </style>
 </head>
 <body>
+    
     <div id="container">
         <l-helix size="250" speed="2.5" color="magenta"></l-helix> <!-- Your loader -->
         <div id="menu">
@@ -77,13 +78,17 @@
     </div>
 
     <script>
+
         const { ipcRenderer } = require('electron');
 
         // Show the menu with fade-in effect
         window.onload = function() {
+
             const menuDiv = document.getElementById('menu');
             menuDiv.style.opacity = 1; // Set opacity to 1 for fade-in effect
+
         };
+
     </script>
 
 </body>
