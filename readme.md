@@ -51,7 +51,7 @@
 
 ---
 
-## Teck Stack
+## Tech Stack
 - **Frontend**: HTML, CSS, JavaScript (React)
 - **Backend**: Node.js, Express
 - **AI Integration**: OpenAI ChatGPT API
