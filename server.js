@@ -54,7 +54,7 @@ app.post('/api/chat', async (req, res) => {
         console.error('Error communicating with OpenAI API:', error);
 
         // Send a generic error response to the client
-        res.json({ response: "Internal Server Error" });
+        res.json({ response: "Internal Server Error - Issue connecting with OpenAI API" });
 
     }
 
