@@ -83,7 +83,7 @@ ipcMain.on('send-message', async (event, message) => {
       {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer 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`, // Replace with your OpenAI API key
+          'Authorization': `Bearer`, // Replace with your OpenAI API key
         },
       }
     );
