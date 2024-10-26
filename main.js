@@ -68,7 +68,7 @@ app.on('activate', () => {
 /**
  * Listen for chat messages sent from the renderer process (via IPC).
  * Sends the user's message to the OpenAI API and returns the response.
- * !Deprecated, left as fallback AI call in case server fails.
+ * !Deprecated, left as fallback API call / reusable code in case server fails.
  */
 ipcMain.on('send-message', async (event, message) => {
 

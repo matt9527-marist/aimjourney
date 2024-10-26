@@ -4,17 +4,18 @@
 import json
 import spacy
 from collections import Counter
+import sys
 
 # Load the SpaCy model
 nlp = spacy.load('en_core_web_sm')
 
 # Load the chunks and their keywords
 # ! CHANGE FILENAMES WHEN SELECTING DIFFERENT TARGET JSONS OR MOVING DIRECTORIES
-with open('parsers/context_chunks.json', 'r', encoding='utf-8') as f:
+with open('context/context_chunks.json', 'r', encoding='utf-8') as f:
     chunks = json.load(f)
 
 # ! CHANGE FILENAMES WHEN SELECTING DIFFERENT TARGET JSONS OR MOVING DIRECTORIES
-with open('parsers/chunk_keywords.json', 'r', encoding='utf-8') as f:
+with open('context/chunk_keywords.json', 'r', encoding='utf-8') as f:
     chunk_keywords = json.load(f)
 
 # List of specific keywords to ensure inclusion
@@ -61,18 +62,20 @@ def find_best_matching_chunk(user_prompt):
         return best_chunk_id
     return None
 
-def print_chunk_by_id(chunk_id):
+def get_chunk_text_by_id(chunk_id):
     chunk_index = int(chunk_id.split('_')[1]) - 1  # Extract the index from chunk_id
     if 0 <= chunk_index < len(chunks):
-        print("Found Chunk:")
-        print(chunks[chunk_index])  # Print the corresponding chunk text
-    else:
-        print("Chunk ID is out of range.")
+        return chunks[chunk_index]  # Return the corresponding chunk text
+    return "Chunk ID is out of range."
 
-# Example usage
-user_input = input("Enter your prompt: ")
-best_chunk = find_best_matching_chunk(user_input)
-if best_chunk:
-    print_chunk_by_id(best_chunk)
-else:
-    print("No matching chunk found.")
+# Main function to accept user prompt from command line
+if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        user_prompt = ' '.join(sys.argv[1:])
+        best_chunk = find_best_matching_chunk(user_prompt)
+        if best_chunk:
+            print(get_chunk_text_by_id(best_chunk))
+        else:
+            print("No matching chunk found.")
+    else:
+        print("No prompt provided.")

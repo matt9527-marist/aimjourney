@@ -1,3 +1,8 @@
+/**
+ * chunkReader.js takes in user input of a file path to a .json file containing text chunks
+ * and prints all the chunks out one by one.
+ */
+
 const fs = require('fs');
 const readline = require('readline');
 

@@ -1,3 +1,12 @@
+/**
+ * splitText.js takes in the app context information .txt file and splits it into distinct chunks
+ * contained within a JSON file. Each chunk is roughly contained within a 50 word limit.
+ * Chunks first divided as singular paragraphs using double line breaks "/\n\s*\n/" as the specified
+ * chunk borders. Then these paragraphs are further split into their whole sentences if exceeding 50 words. 
+ * 
+ * @Developer keep in mind that each "paragraph" in our .txt file is saved in plaintext as one whole line.
+ */
+
 const fs = require('fs');
 
 // Construct the relative path to the text file
@@ -7,14 +16,26 @@ const txtPath = 'context/AIM-JOURNEY-CONTEXT.txt'; // Updated for the text file
 // Load the text file
 let dataBuffer = fs.readFileSync(txtPath, 'utf-8');
 
-// Function to split text into chunks based on double line breaks
+/**
+ * splitIntoChunks is a first parse through the .txt file, dividing it 
+ * by each paragraph, as specified by double line breaks.
+ * @param {*} text obtained by the data buffer, which reads our context info file
+ * @returns a mapping of chunks
+ */
 function splitIntoChunks(text) {
     // Split text into chunks using double newlines
     const chunks = text.split(/\n\s*\n/); // Split text by double line breaks (with optional whitespace)
     return chunks.map(chunk => chunk.trim()).filter(chunk => chunk.length > 0); // Trim each chunk and remove empty chunks
 }
 
-// Function to further split a chunk into smaller chunks based on word count
+/**
+ * splitChunkByWordLimit is a second parse done on each individual chunk given to us
+ * by splitIntoChunks which further divides the chunk into individual sentences if the 
+ * word limit for the chunk is exceeded. (Modify word limit according to OpenAI usage costs)
+ * @param {*} chunk the chunk obtained from the first parse
+ * @param {*} maxWordsPerChunk maximum word count allowed in one chunk 
+ * @returns a mapping of chunks
+ */
 function splitChunkByWordLimit(chunk, maxWordsPerChunk) {
     const sentences = chunk.match(/[^.!?]+[.!?]+/g) || [chunk]; // Match sentences or keep chunk as is
     let result = [];

@@ -9,6 +9,8 @@ const axios = require('axios'); // Axios is used to make HTTP requests to extern
 
 const cors = require('cors'); // CORS (Cross-Origin Resource Sharing) middleware is used to allow requests from different origins (e.g., from the Electron app to the server)
 
+const { exec } = require('child_process');
+
 require('dotenv').config(); // dotenv loads environment variables from a .env file
 
 // Define the port the server will run on
@@ -20,44 +22,69 @@ const PORT = process.env.PORT || 5000;
 app.use(cors()); // Enable CORS to allow cross-origin requests
 app.use(express.json()); // Enable the server to parse incoming JSON payloads
 
-// POST endpoint for handling chat messages sent from the client
+// POST endpoint for handling user prompts
 app.post('/api/chat', async (req, res) => {
-
-    // Extract the user message (prompt) from the request body
     const { prompt } = req.body;
+    let chunkOutput = null;
 
     try {
-
-        // Send a POST request to the OpenAI API to generate a response
-        const response = await axios.post('https://api.openai.com/v1/chat/completions', {
-            model: 'gpt-3.5-turbo', // Specify which model to use (e.g., GPT-3.5 Turbo)
-            messages: [{ role: 'user', content: prompt }], // Send the user's prompt to the model
-            temperature: 0.7, // Set the randomness/creativity of the responses (0 = deterministic, 1 = more creative)
-            max_tokens: 150, // Limit the length of the bot's response (150 tokens in this case)
-        }, {
-            headers: {
-                // Use the API key from the environment variables to authorize the request
-                'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
-                'Content-Type': 'application/json',
-            },
+        // Step 1: Call promptKeywords.py to retrieve the relevant chunk
+        chunkOutput = await new Promise((resolve, reject) => {
+            exec(`python3 promptKeywords.py "${prompt}"`, (error, stdout, stderr) => {
+                if (error) {
+                    console.error(`Error executing promptKeywords.py: ${error.message}`);
+                    reject('Error executing prompt processing script');
+                } else if (stderr) {
+                    console.error(`stderr: ${stderr}`);
+                    reject('Error executing prompt processing script');
+                } else {
+                    resolve(stdout.trim()); // Resolve with the chunk output
+                }
+            });
         });
 
-        // Extract the content of the response from OpenAI's API
+        // Step 2: Continue to OpenAI API after retrieving chunk output. Send that chunk along with the user prompt and 
+        // simple prompt engineering message to the API. Return the API response to the client
+        const response = await axios.post(
+            'https://api.openai.com/v1/chat/completions',
+            {
+                model: 'gpt-3.5-turbo',
+                messages: [
+                    { role: 'system', content: 
+                        'You are an aim training / esports assistant. Use the given chunk of text and your own knowledge to give a response.' }, // Optional system message
+                    { role: 'user', content: chunkOutput }, // Send the chunk as the first message
+                    { role: 'user', content: prompt } // Then send the user prompt
+                ],
+                temperature: 0.7,
+                max_tokens: 150,
+            },
+            {
+                headers: {
+                    'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+                    'Content-Type': 'application/json',
+                },
+            }
+        );
+
         const botResponse = response.data.choices[0].message.content;
+
+        //* @Developer, for debugging purposes, we include the sent context chunk. This can be removed. 
         
-        // Send the bot's response back to the client in a JSON format
-        res.json({ response: botResponse });
+        // Send a single response combining both outputs
+        res.status(200).json({
+            response: `Sent chunk: "${chunkOutput}" to OpenAI as context, 
+            returned ChatGPT response: "${botResponse}"`
+        });
 
     } catch (error) {
+        console.error('Error processing request:', error);
 
-        // Log any error that occurs when communicating with the OpenAI API
-        console.error('Error communicating with OpenAI API:', error);
-
-        // Send a generic error response to the client
-        res.json({ response: "Internal Server Error - Issue connecting with OpenAI API" });
-
+        // Send error response with chunk output if available
+        res.status(500).json({
+            response: `Internal Server Error - Issue processing the request. Chunk output: 
+            ${chunkOutput || "No chunk available due to an error in chunk processing."}`
+        });
     }
-
 });
 
 // Start the server and listen on the specified port
