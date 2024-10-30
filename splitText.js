@@ -74,7 +74,8 @@ function processTextFile(dataBuffer) {
     const initialChunks = splitIntoChunks(text);
 
     // Set the target number of words per chunk (e.g., 50 words)
-    const maxWordsPerChunk = 50;
+    // *Iteration 1 testing - 100 words
+    const maxWordsPerChunk = 100;
 
     // Further split each chunk by word limit
     const finalChunks = [];

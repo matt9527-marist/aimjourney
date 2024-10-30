@@ -11,8 +11,16 @@ import spacy
 # Load the SpaCy model
 nlp = spacy.load("en_core_web_sm")
 
-# Define a set of required keywords
-required_keywords = {"tension", "wrist", "micro", "pressure", "flick"}
+# Define sets of keywords for categorization
+specific_keywords = {'tension', 'wrist', 'micro', 'pressure', 'flick', 'tense', 'hurts', 'pain', 'Overwatch', 'OW', 'OW2', 'VALORANT', 'val',
+                     'cs', 'Counter Strike', 'csgo', 'rainbow six', 'r6', 'cod', 'Call of Duty', 'apex', 'Apex Legends', 'dynamic', 'clicking',
+                     'tracking', 'precise', 'reactive', 'switching', 'target switching', 'speed', 'evasive', 'stability', 'stable', 'static click',
+                     'static', 'Bardoz', 'fluidity', 'target priority', 'crosshair placement', 'smoothness', 'smoothly', 'wrist aim', 'arm aim',
+                     'fingertip aim', 'micro adjustment', 'shot confirmation'}
+
+vague_keywords = {'aim', 'aiming', 'improve', 'improvement', 'practice', 'skill', 'train', 'trainer', 'training'}
+
+common_keywords = {'monitor', 'mouse', 'sleeve', 'keyboard', 'shaky', 'shakiness', 'shaking', 'smooth aim', 'calm aim'}
 
 # Load chunks from the JSON file
 # ! CHANGE FILENAMES WHEN SELECTING DIFFERENT TARGET JSONS OR MOVING DIRECTORIES
@@ -40,8 +48,16 @@ for index, chunk in enumerate(chunks):
         if token.is_alpha and not token.is_stop:  # Ignore stop words and non-alpha tokens
             keywords.add(token.text)
 
-    # Add required keywords
-    keywords.update(required_keywords.intersection(set(doc.text.lower().split())))
+    # Identify and add specific, vague, and common keywords
+    specific_matches = specific_keywords.intersection(set(doc.text.lower().split()))
+    vague_matches = vague_keywords.intersection(set(doc.text.lower().split()))
+    common_matches = common_keywords.intersection(set(doc.text.lower().split()))
+
+    # Add categorized keywords to the chunk keywords list
+    keywords.update(specific_matches)
+    keywords.update(vague_matches)
+    keywords.update(common_matches)
+
 
     # Map keywords to the chunk
     chunk_keywords[f'chunk_{index + 1}'] = list(keywords)

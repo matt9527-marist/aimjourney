@@ -28,7 +28,11 @@ with open('context/chunk_keywords.json', 'r', encoding='utf-8') as f:
 
 # List of specific keywords to ensure inclusion. If found in prompt, will significantly influence which chunk is chosen.
 #* These keywords are highly specific and chosen deliberately to push prompts containing them to top priority
-specific_keywords = ['tension', 'wrist', 'micro', 'pressure', 'flick']
+specific_keywords = ['tension', 'wrist', 'micro', 'pressure', 'flick', 'tense', 'hurts', 'pain', 'Overwatch', 'OW', 'OW2', 'VALORANT', 'val',
+                     'cs', 'Counter Strike', 'csgo', 'rainbow six', 'r6', 'cod', 'Call of Duty', 'apex', 'Apex Legends', 'dynamic', 'clicking',
+                     'tracking', 'precise', 'reactive', 'switching', 'target switching', 'speed', 'evasive', 'stability', 'stable', 'static click',
+                     'static', 'Bardoz', 'fluidity', 'target priority', 'crosshair placement', 'smoothness', 'smoothly', 'wrist aim', 'arm aim',
+                     'fingertip aim', 'micro adjustment', 'shot confirmation']
 
 # List of vague keywords to reduce scoring impact
 #* These keywords are too vague and sparse across the data context to provide any good influence on the prompt
@@ -36,7 +40,7 @@ vague_keywords = ['aim', 'aiming', 'improve', 'improvement', 'practice', 'skill'
 
 # List of common keywords to slightly skew scoring impact positively.
 #* These keywords will add a slight positive bias to the chunk weight, applied for terms included in frequently asked questions
-common_keywords = ['monitor', 'mouse', 'sleeve', 'keyboard']
+common_keywords = ['monitor', 'mouse', 'sleeve', 'keyboard', 'shaky', 'shakiness', 'shaking', 'smooth aim', 'calm aim']
 
 
 def extract_keywords(prompt):
@@ -46,6 +50,11 @@ def extract_keywords(prompt):
     
     # Add specific keywords
     for keyword in specific_keywords:
+        if keyword in prompt:
+            keywords.add(keyword)
+
+    # Add common keywords
+    for keyword in common_keywords:
         if keyword in prompt:
             keywords.add(keyword)
     
