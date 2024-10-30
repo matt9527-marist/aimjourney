@@ -16,6 +16,9 @@
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Include marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
 </head>
 
 <body>
@@ -45,6 +48,9 @@
         const { ipcRenderer } = require('electron');
     
         document.getElementById('app').style.opacity = 1; // Set app opacity to 1 to show it immediately, loader here is deprecated
+
+        // Initialize conversation history
+        const conversationHistory = [];
     
         // Event listener for "SEND" button click
         document.getElementById('sendButton').addEventListener('click', () => {
@@ -73,10 +79,16 @@
                 if (chatContainer.style.display === 'none' || chatContainer.style.display === '') {
                     chatContainer.style.display = 'block'; // Show the chat container
                 }
+
+                // Add user input to conversation history
+                conversationHistory.push({ role: 'user', content: userInput });
     
                 // Display the user's message in the chatbox
                 addMessage('user', userInput);
                 document.getElementById('userInput').value = ''; // Clear the input field
+
+                // Create a prompt string from history
+                const prompt = conversationHistory.map(entry => `${entry.role}: ${entry.content}`).join('\n');
     
                 // Send the message to the backend server (API) for processing
                 try {
@@ -89,6 +101,10 @@
                     });
     
                     const data = await response.json(); // Get the JSON response
+                    const botResponse = data.response; // Extract the bot's response
+
+                    // Add bot response to conversation history
+                    conversationHistory.push({ role: 'bot', content: botResponse });
                     addMessage('bot', data.response); // Display the bot's response
                 } catch (error) {
                     console.error('Error:', error);
@@ -104,19 +120,58 @@
          * @param {string} sender - 'user' or 'bot' to determine the source of the message
          * @param {string} message - The message to be displayed
          */
-        function addMessage(sender, message) {
+         function addMessage(sender, message) {
 
-            // Find the chat div where messages are displayed and create a new div element for the message
+            // Find the chat div where messages are displayed
             const chatDiv = document.getElementById('chat');
-            const messageDiv = document.createElement('div');
 
-            // Add classes for styling (user or bot message) and message prefix
-            messageDiv.className = 'message ' + sender;
-            messageDiv.textContent = (sender === 'user' ? 'You: ' : 'Bot: ') + message;
+            // Check if the message contains "Sent chunk:" and "to OpenAI as context."
+            if (message.includes("Sent chunk:") && message.includes("to OpenAI as context.")) {
+                // Extract the chunk output by locating the starting and ending markers
+                const chunkStart = message.indexOf("Sent chunk:") + "Sent chunk:".length;
+                const chunkEnd = message.indexOf("to OpenAI as context.");
+                const chunkOutput = message.slice(chunkStart, chunkEnd).trim();
+
+                // Extract and clean the ChatGPT response
+                let botResponse = message.slice(chunkEnd + "to OpenAI as context.".length).trim();
+                if (botResponse.startsWith("Returned ChatGPT response:")) {
+                    botResponse = botResponse.replace("Returned ChatGPT response:", "").trim();
+                }
+
+                // Display the chunk output with a label, styled distinctly
+                if (chunkOutput) {
+                    const chunkDiv = document.createElement('div');
+                    chunkDiv.className = 'message chunk'; // 'chunk' can be styled in CSS for visual distinction
+                    chunkDiv.innerHTML = `<strong>Chunk Output:</strong> ${marked.parse(chunkOutput)}`; // Use marked to parse Markdown
+                    chatDiv.appendChild(chunkDiv);
+                }
+
+                // Display the ChatGPT response with specific styling
+                if (botResponse) {
+                    const responseDiv = document.createElement('div');
+                    responseDiv.className = 'message bot-response'; // Assigning a specific class for bot responses
+                    responseDiv.innerHTML = marked.parse(botResponse); // Use marked to parse Markdown
+                    chatDiv.appendChild(responseDiv);
+                }
+
+            } else {
+                // If format doesn't match, display as a single message, parsing for Markdown
+                const messageDiv = document.createElement('div');
+                messageDiv.className = 'message ' + sender;
+                
+                // Set display style for user messages to be inline
+                if (sender === 'user') {
+                    messageDiv.style.display = 'inline'; // Prevent new line
+                    messageDiv.innerHTML = 'You: ' + message; // Use marked to parse Markdown
+                } else {
+                    messageDiv.innerHTML = marked.parse(message); // Use marked to parse Markdown
+                }
+
+                chatDiv.appendChild(messageDiv);
+            }
 
             // Automatically scroll the chat to the most recent message
-            chatDiv.appendChild(messageDiv);
-            chatDiv.scrollTop = chatDiv.scrollHeight; // Scroll to the bottom
+            chatDiv.scrollTop = chatDiv.scrollHeight;
 
         }
         

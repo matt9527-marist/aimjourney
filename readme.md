@@ -23,7 +23,7 @@
 ---
 
 ## Features
-- **Enhanced ChatGPT Aim Assistant**: Embedded ChatGPT chatbot for quick Q&A related to aim training.
+- **Enhanced ChatGPT Aim Assistant**: Embedded ChatGPT chatbot for quick Q&A related to aim training, esports, and personal improvement in competitive gaming.
 - **Kovaak's Setup Utility**: Users can download visual themes, crosshairs, and sounds for use in Kovaak's FPS Aim Trainer
 - **Scenario Stats Tracker**: Pulls from local Kovaak's stats directory to create graphs and visualize trends in performance.
 - **In-App Achievements**: App rewards for completing specific tasks or hitting score thresholds on specific aim training scenarios. 
@@ -49,14 +49,17 @@
 - [Electron](https://www.electronjs.org/)
 - [OpenAI API Key](https://platform.openai.com/) for ChatGPT integration
 
+- [Data/Context](https://docs.google.com/document/d/1Oahyqp7lf0oc4bzQCy81VmLtFhiL14fZq1_BNkB3rvY/edit?usp=sharing) The information aiding ChatGPT
+
 ---
 
 ## Tech Stack
 - **Frontend**: HTML, CSS, JavaScript (React)
-- **Backend**: Node.js, Express
+- **Backend**: Node.js, Express, Python NLP
 - **AI Integration**: OpenAI ChatGPT API
 - **Build Tool**: Electron
 
 ---
 
 ## Contributing
+@ William Boulton

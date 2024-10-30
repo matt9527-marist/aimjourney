@@ -101,7 +101,8 @@ def find_best_matching_chunk(user_prompt):
     # Find the chunk with the highest score
     if scores:
         best_chunk_id = max(scores, key=scores.get)  # Get the ID of the chunk with the highest score
-        return best_chunk_id
+        if scores[best_chunk_id] > 0:  # Check if the score is greater than 0
+            return best_chunk_id
     return None
 
 def get_chunk_text_by_id(chunk_id):

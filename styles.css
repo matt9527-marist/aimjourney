@@ -133,3 +133,23 @@ body {
     color: magenta; /* Change bot text color to light purple (Thistle) */
 }
 
+.message.chunk {
+    color: rgba(0,188,212,1);
+    font-weight: bold; /* Optional: makes it stand out more */
+}
+
+.chunk {
+    background-color: rgb(33, 18, 58); /* Light background for chunk messages */
+    border-left: 3px solid #1fb6e4; /* Distinct left border */
+    padding: 10px; /* Padding for better readability */
+    margin: 5px 0; /* Space around chunk messages */
+}
+
+.bot-response {
+    background-color: rgb(33, 18, 58); /* Light blue background for ChatGPT responses */
+    border-left: 3px solid #df70e9; /* Distinct left border */
+    padding: 10px; /* Padding for better readability */
+    margin: 5px 0; /* Space around bot messages */
+    border-radius: 5px; /* Optional: rounded corners for a softer look */
+    color: magenta; /* Set text color to magenta */
+}

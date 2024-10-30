@@ -72,8 +72,8 @@ app.post('/api/chat', async (req, res) => {
         
         // Send a single response combining both outputs
         res.status(200).json({
-            response: `Sent chunk: "${chunkOutput}" to OpenAI as context, 
-            returned ChatGPT response: "${botResponse}"`
+            response: `Sent chunk: "${chunkOutput}" to OpenAI as context. 
+            Returned ChatGPT response: "${botResponse}"`
         });
 
     } catch (error) {
@@ -81,7 +81,7 @@ app.post('/api/chat', async (req, res) => {
 
         // Send error response with chunk output if available
         res.status(500).json({
-            response: `Internal Server Error - Issue processing the request. Chunk output: 
+            response: `Internal Server Error - Issue processing the request. Generated Chunk: 
             ${chunkOutput || "No chunk available due to an error in chunk processing."}`
         });
     }
