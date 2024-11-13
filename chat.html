@@ -28,6 +28,11 @@
         &lt;&lt; <!-- "<<" -->
     </div>
 
+    <!-- Forward button to navigate to secondary evaluations page, testing.html -->
+    <div id="to-testing-button" onclick="location.href='testing.html'">
+        &gt;&gt; <!-- ">>" -->
+    </div>
+
     <!-- Main content of the chat box (initially hidden during load) -->
     <div id="app">
         <h1 id="title">Aim Journey Assistant</h1>
@@ -42,11 +47,21 @@
         <button id="sendButton">Send</button>
     </div>
 
+    <!-- Debug checkbox in the bottom-right corner -->
+    <div id="debugCheckbox">
+        <input type="checkbox" id="debugMode" />
+        <label for="debugMode">Debug</label>
+    </div>
+
     <script>
 
         // Import Electron's ipcRenderer to enable communication between the frontend (renderer) and backend (main) process
         const { ipcRenderer } = require('electron');
-    
+
+        const XLSX = require('xlsx'); // Import xlsx library
+        const fs = require('fs');
+        let chatData = []; // Array to store chat data for Excel export
+        
         document.getElementById('app').style.opacity = 1; // Set app opacity to 1 to show it immediately, loader here is deprecated
 
         // Initialize conversation history
@@ -102,10 +117,16 @@
     
                     const data = await response.json(); // Get the JSON response
                     const botResponse = data.response; // Extract the bot's response
+                    const cleanBotResponse = extractBotResponse(data.response); // Extract the bot's response without the generated chunk
 
                     // Add bot response to conversation history
                     conversationHistory.push({ role: 'bot', content: botResponse });
                     addMessage('bot', data.response); // Display the bot's response
+
+                    // Save to chat data array for Excel
+                    chatData.push({ "User Prompt": userInput, "AI Response": cleanBotResponse });
+                    saveToExcel(); // Call the function to save data to Excel file
+
                 } catch (error) {
                     console.error('Error:', error);
                     // This message indicates a failure by the frontend in connecting to the server. 
@@ -124,6 +145,7 @@
 
             // Find the chat div where messages are displayed
             const chatDiv = document.getElementById('chat');
+            const isDebugMode = document.getElementById('debugMode').checked;
 
             // Check if the message contains "Sent chunk:" and "to OpenAI as context."
             if (message.includes("Sent chunk:") && message.includes("to OpenAI as context.")) {
@@ -139,7 +161,7 @@
                 }
 
                 // Display the chunk output with a label, styled distinctly
-                if (chunkOutput) {
+                if (chunkOutput && isDebugMode) {
                     const chunkDiv = document.createElement('div');
                     chunkDiv.className = 'message chunk'; // 'chunk' can be styled in CSS for visual distinction
                     chunkDiv.innerHTML = `<strong>Chunk Output:</strong> ${marked.parse(chunkOutput)}`; // Use marked to parse Markdown
@@ -174,6 +196,71 @@
             chatDiv.scrollTop = chatDiv.scrollHeight;
 
         }
+
+        /**
+         * Saves or appends to the ChatData.xlsx file saved within the project's root directory
+         * The ChatData.xlsx file, not manually edited, is passed on and added to for debugging
+         * purposes and displaying the AI assistant accuracy evaluations.
+         * If the .xlsx file does not yet exist, this function will create a new one. 
+         */
+        function saveToExcel() {
+            const filePath = "ChatData.xlsx";
+            let workbook;
+            let worksheet;
+
+            if (fs.existsSync(filePath)) {
+                // Load the existing workbook and get the "Chat Data" sheet
+                workbook = XLSX.readFile(filePath);
+                worksheet = workbook.Sheets["Chat Data"];
+
+                if (!worksheet) {
+                    // If the sheet doesn't exist, create it with chatData
+                    worksheet = XLSX.utils.json_to_sheet(chatData);
+                    XLSX.utils.book_append_sheet(workbook, worksheet, "Chat Data");
+                } else {
+                    // Convert the existing sheet to JSON to get the current data row count
+                    const existingData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+                    // Determine the next empty row (after existing rows)
+                    const nextRow = existingData.length;
+
+                    // Append only the new data in chatData at the next empty row
+                    XLSX.utils.sheet_add_json(worksheet, chatData, { origin: { r: nextRow, c: 0 }, skipHeader: true });
+                }
+            } else {
+                // If the file doesn't exist, create a new workbook and sheet
+                workbook = XLSX.utils.book_new();
+                worksheet = XLSX.utils.json_to_sheet(chatData);
+                XLSX.utils.book_append_sheet(workbook, worksheet, "Chat Data");
+            }
+
+            // Write the workbook back to the file
+            XLSX.writeFile(workbook, filePath);
+
+            // Clear chatData to avoid duplicate entries in future calls
+            chatData.length = 0;
+        }
+
+        /**
+         * Function to extract the bot response without the chunk.
+         * @param {string} message - The original response message containing chunk and response.
+         * @returns {string} - The cleaned-up bot response.
+         */
+        function extractBotResponse(message) {
+            if (message.includes("Sent chunk:") && message.includes("to OpenAI as context.")) {
+                const chunkEnd = message.indexOf("to OpenAI as context.");
+                let botResponse = message.slice(chunkEnd + "to OpenAI as context.".length).trim();
+
+                // Remove the "Returned ChatGPT response:" prefix if present
+                if (botResponse.startsWith("Returned ChatGPT response:")) {
+                    botResponse = botResponse.replace("Returned ChatGPT response:", "").trim();
+                }
+
+                return botResponse;
+            }
+
+            return message; // If no chunk, return the full message as the response
+}
         
     </script>
 

@@ -15,7 +15,6 @@ import os
 # Load the SpaCy model
 nlp = spacy.load('en_core_web_sm')
 
-
 # Load the chunks and their keywords
 # ! CHANGE FILENAMES WHEN SELECTING DIFFERENT TARGET JSONS OR MOVING DIRECTORIES
 with open('context/context_chunks.json', 'r', encoding='utf-8') as f:
@@ -29,8 +28,8 @@ with open('context/chunk_keywords.json', 'r', encoding='utf-8') as f:
 # List of specific keywords to ensure inclusion. If found in prompt, will significantly influence which chunk is chosen.
 #* These keywords are highly specific and chosen deliberately to push prompts containing them to top priority
 specific_keywords = ['tension', 'wrist', 'micro', 'pressure', 'flick', 'tense', 'hurts', 'pain', 'Overwatch', 'OW', 'OW2', 'VALORANT', 'val',
-                     'cs', 'Counter Strike', 'csgo', 'rainbow six', 'r6', 'cod', 'Call of Duty', 'apex', 'Apex Legends', 'dynamic', 'clicking',
-                     'tracking', 'precise', 'reactive', 'switching', 'target switching', 'speed', 'evasive', 'stability', 'stable', 'static click',
+                     'cs', 'Counter Strike', 'csgo', 'rainbow six', 'r6', 'cod', 'Call of Duty', 'apex', 'Apex Legends', 'dynamic',
+                     'precise tracking', 'reactive tracking', 'switching', 'target switching', 'speed', 'evasive', 'stability', 'stable', 'static click',
                      'static', 'Bardoz', 'fluidity', 'target priority', 'crosshair placement', 'smoothness', 'smoothly', 'wrist aim', 'arm aim',
                      'fingertip aim', 'micro adjustment', 'shot confirmation']
 
@@ -42,11 +41,19 @@ vague_keywords = ['aim', 'aiming', 'improve', 'improvement', 'practice', 'skill'
 #* These keywords will add a slight positive bias to the chunk weight, applied for terms included in frequently asked questions
 common_keywords = ['monitor', 'mouse', 'sleeve', 'keyboard', 'shaky', 'shakiness', 'shaking', 'smooth aim', 'calm aim']
 
+# List of phrases or frequently asked questions that can be used to very quickly identify what the user wants
+#* These keywords will add a very heavy bias to the chunk weight, basically guaranteeing the choice.
+faq_strings = ['How do you play static', 'scenarios for Overwatch', 'What is Voltaic']
 
 def extract_keywords(prompt):
     # Process the user prompt with SpaCy
     doc = nlp(prompt)
     keywords = set()
+
+    # Add FAQ strings
+    for keyword in faq_strings:
+        if keyword in prompt:
+            keywords.add(keyword)
     
     # Add specific keywords
     for keyword in specific_keywords:
@@ -81,6 +88,10 @@ def find_best_matching_chunk(user_prompt):
     # Score chunks based on matching keywords
     for chunk_id, keywords in chunk_keywords.items():
         scores[chunk_id] = 0  # Initialize score for each chunk
+
+         # Add heavy bias for FAQ matches
+        faq_matches = user_keywords.intersection(set(faq_strings))
+        scores[chunk_id] += len(faq_matches) * 20  # High weight for FAQ string matches
 
         # Count specific keyword matches (positive impact)
         specific_matches = user_keywords.intersection(set(keywords).intersection(specific_keywords))
@@ -130,6 +141,11 @@ if __name__ == "__main__":
         # Output the list of found keywords and their scores in descending order
         # That is, the top listed keyword provided the most impact in selecting the given chunk
         for chunk_id, keywords in chunk_keywords.items():
+            # Count FAQ matches (heavy weight)
+            faq_matches = extracted_keywords.intersection(set(faq_strings))
+            for keyword in faq_matches:
+                keyword_scores[keyword] += 20  # Heavy weight for FAQ matches
+
             # Count specific keyword matches (positive impact)
             specific_matches = extracted_keywords.intersection(set(keywords).intersection(specific_keywords))
             for keyword in specific_matches:

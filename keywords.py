@@ -4,6 +4,7 @@
 # This script should only be run once for the lifetime of the project or whenever 
 # a new context_chunks.json needs to be generated for a new AIM-JOURNEY-CONTEXT file.
 # *Run this script on each context update. 
+# *Continuously add keywords to tailor chunk retrieval process for different user prompts.
 
 import json
 import spacy
@@ -13,14 +14,19 @@ nlp = spacy.load("en_core_web_sm")
 
 # Define sets of keywords for categorization
 specific_keywords = {'tension', 'wrist', 'micro', 'pressure', 'flick', 'tense', 'hurts', 'pain', 'Overwatch', 'OW', 'OW2', 'VALORANT', 'val',
-                     'cs', 'Counter Strike', 'csgo', 'rainbow six', 'r6', 'cod', 'Call of Duty', 'apex', 'Apex Legends', 'dynamic', 'clicking',
-                     'tracking', 'precise', 'reactive', 'switching', 'target switching', 'speed', 'evasive', 'stability', 'stable', 'static click',
+                     'cs', 'Counter Strike', 'csgo', 'rainbow six', 'r6', 'cod', 'Call of Duty', 'apex', 'Apex Legends', 'dynamic',
+                     'precise tracking', 'reactive tracking', 'switching', 'target switching', 'speed', 'evasive', 'stability', 'stable', 'static click',
                      'static', 'Bardoz', 'fluidity', 'target priority', 'crosshair placement', 'smoothness', 'smoothly', 'wrist aim', 'arm aim',
                      'fingertip aim', 'micro adjustment', 'shot confirmation'}
 
 vague_keywords = {'aim', 'aiming', 'improve', 'improvement', 'practice', 'skill', 'train', 'trainer', 'training'}
 
 common_keywords = {'monitor', 'mouse', 'sleeve', 'keyboard', 'shaky', 'shakiness', 'shaking', 'smooth aim', 'calm aim'}
+
+faq_strings = {
+    "What is the best sensitivity for aiming?",
+    "How do I aim faster in games?"
+}
 
 # Load chunks from the JSON file
 # ! CHANGE FILENAMES WHEN SELECTING DIFFERENT TARGET JSONS OR MOVING DIRECTORIES
@@ -52,12 +58,13 @@ for index, chunk in enumerate(chunks):
     specific_matches = specific_keywords.intersection(set(doc.text.lower().split()))
     vague_matches = vague_keywords.intersection(set(doc.text.lower().split()))
     common_matches = common_keywords.intersection(set(doc.text.lower().split()))
+    faq_matches = faq_strings.intersection(set(doc.text.lower().split()))
 
     # Add categorized keywords to the chunk keywords list
     keywords.update(specific_matches)
     keywords.update(vague_matches)
     keywords.update(common_matches)
-
+    keywords.update(faq_matches)
 
     # Map keywords to the chunk
     chunk_keywords[f'chunk_{index + 1}'] = list(keywords)

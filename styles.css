@@ -23,6 +23,23 @@ body {
     background-color: rgba(138,74,243,1); /* Darker background on hover */
 }
 
+/* Style for the Forward button */
+#to-testing-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 25px; /* Increase font size for better visibility */
+    padding: 10px 10px; /* Add padding to create a button effect */
+    background-color: rgba(70,41,86,1); /* Faded background color */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#to-testing-button:hover {
+    background-color: rgba(138,74,243,1); /* Darker background on hover */
+}
+
 #title {
     text-align: center; /* Center the text horizontally */
     margin: 20px 0; /* Add some vertical spacing above and below */
@@ -152,4 +169,23 @@ body {
     margin: 5px 0; /* Space around bot messages */
     border-radius: 5px; /* Optional: rounded corners for a softer look */
     color: magenta; /* Set text color to magenta */
+}
+
+/* Style for the Debug checkbox */
+#debugCheckbox {
+    position: fixed;
+    bottom: 60px;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;  /* Larger font for the label text */
+    color: rgb(16, 218, 253);
+    font-family: 'Lato', sans-serif;
+}
+
+/* Increase the size of the checkbox */
+#debugCheckbox input[type="checkbox"] {
+    width: 20px;         /* Increase width */
+    height: 20px;        /* Increase height */
+    margin-right: 8px;   /* Space between checkbox and label */
 }

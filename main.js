@@ -15,7 +15,7 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 
 const axios = require('axios'); // Axios is used to make HTTP requests to the OpenAI API
 
-require('electron-reload')(__dirname); // Enables live reloading during development when files are changed 
+//*require('electron-reload')(__dirname); // Enables live reloading during development when files are changed 
 // @Developer do CRTL+S to save, auto reloads app.
 
 /**

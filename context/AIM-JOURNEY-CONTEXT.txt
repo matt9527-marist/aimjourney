@@ -19,4 +19,49 @@ When choosing an aim trainer, you should go with Kovaak’s FPS Aim Trainer, whi
 Do not hesitate to start aim training out of fear that your setup is not good enough. However, there are ways to upgrade your setup, such that your experience with the aim trainer and improvement progress might be elevated.
 
 
-Get at least a 144hz monitor, ideally 240hz. Get a modern gaming mouse with a good sensor and a low maintenance mousepad with a speed appropriate for you. Upgrade your PC specs. Maybe experiment with mouse skates or a gaming sleeve. Even if you are discouraged about your setup and do not want to spend a fortune, keep in mind that some very top level aimers have achieved great things on 60hz monitors. Specifically, players like eloevv and Mana.
+Get at least a 144hz monitor, ideally 240hz. Get a modern gaming mouse with a good sensor and a low maintenance mousepad with a speed appropriate for you. Upgrade your PC specs. Maybe experiment with mouse skates or a gaming sleeve. Even if you are discouraged about your setup and do not want to spend a fortune, keep in mind that some very top level aimers have achieved great things on 60hz monitors. Specifically, players like eloevv and Mana. 
+
+
+When configuring the aim trainer, you should be using an FOV (field of view) of at least 103 OW. This specific setting ensures that you will play scenarios from the right perspective and not make certain scenarios trivially easier. You can, however, raise this field of view to get a more fair playing field on scenarios or situations where you might have a lot of targets off-screen. 
+
+
+“What sensitivity should I use?” is probably the most frequently asked question by beginners. By and large, most people will say that sensitivity is up to preference, but most people use somewhere between 20cm/360° to 50cm/360°. This is not a hard rule, but most people’s ideal sensitivity lands within that range. Typically, you should prefer slower sensitivities for games that are more “flick” reliant, like CSGO or Valorant, and higher sensitivities for games that require more tracking or verticality, such as Overwatch or Fortnite. Feel free to experiment with different sensitivities often and find what works for you.
+
+
+Muscle memory is a misnomer in aiming. The term “muscle memory” when used improperly suggests that you should stick to a specific sensitivity across all situations to preserve consistency, and changing your sensitivity would ruin your muscle memory. This is a very simplified and inaccurate understanding of motor memory, an important idea in neuroscience. Because aiming has little to no formal research, it is best not to worry about muscle/motor memory, even when discussed as a proper neuroscience concept, as its role in aiming is not well understood.
+
+
+Enough skilled players have shown over time and through experience that it is okay to change your sensitivity, and it is okay to use different sensitivities for different games. You can further enrich your aim training experience by using a sensitivity randomizer or RawAccel. If you would like to read more information about the matter, please view the Voltaic article on Why ‘Muscle memory’ is seen as a meme in aiming, and see VT Viscose’s video on RawAccel.
+
+
+As for specific visual settings in the aim trainer, you should try to look towards the resources top Voltaic players have, such as VT Matty’s Visuals mastersheet. Other sources for good visuals and sounds to use in the trainer are VT Clover and Aech+. If you feel like making your own visual settings, try to pick something that is nicer on the eyes, with high contrast between the background and the targets. 
+
+
+Aim theory describes the mechanics behind aiming and the methods used to train optimally. Aim theory dictates that all aiming situations be separated into multiple categories. These categories are Clicking, Tracking, and Switching. 
+
+
+Static clicking is the first subcategory of Clicking. All targets in these scenarios are stationary. The goal of most static clicking scenarios is to help players famliarize themselves with basic flicking techniques. Players should expect to hit high accuracy thresholds, upwards of 90-92%. Static clicking scenario examples include 1w6ts (1wall6targets_small), 1w4ts, 1w3ts, ww3t, Wide Wall 4 targets, Fourshot, Threeshot, and other similarly named scenarios. Static clicking places a focus on the initial flick to each target, which should be fast, rigid, and explosive, versus the micro correction, which needs to be smooth, narrow, and succinct.
+
+
+Advanced levels of static clicking force the player to maintain dynamic pacing, which means that players must vary their frequency of shots depending on the spawns or the positioning of the targets on screen. Increasing pacing to eliminate nearby targets faster can be referred to as cluster farming. It often requires the player to suspend the tension in their arm and focus on being extra smooth with their wrist and fingertips. 
+
+
+Static clicking also pushes players to develop what is known as fluidity. Fluidity holds that the time it takes to complete a micro correction and target confirmation on each target should be at a minimum. Players need to be fluid in order to reach much higher pacing on clicking scenarios and get through more targets. 
+
+
+Dynamic clicking, unlike in static, involves targets moving at varied speeds. Dynamic clicking places a greater focus on target reading, especially in your peripheral vision, and the shot confirmation. The key is to be deliberate with your shots, such that you are not spamming shots, and you are properly timing clicks according to the movement you read. Dynamic clicking requires that you still maintain fast initial flicks and smooth micro corrections, but are able to do so while managing multiple moving targets. Your pacing should also be more static/constant instead of fluctuating. 
+
+
+Having a constant pace in dynamic clicking helps us to better manage multi-target movement reading. It also encourages a smooth flow through the targets and clearer peripheral vision. Specifically in arc dynamic clicking, or bounce clicking scenarios, there is more emphasis on being smooth and effectively “juggling” targets on screen. You should always have the next target in mind when playing dynamic clicking. Roadmapping is a key skill in all multi-target scenarios, which says that you should be at least 2-3 targets ahead of your current focused target.
+
+
+For recommended dynamic clicking scenarios, try any Pasu type. Pasu is the prime XY axis dynamic clicking scenario, which comes in thousands of variants and is very useful to train. For more precision based dynamic clicking, you should try Popcorn variants, which is a particularly accuracy-focused and difficult bounce clicking scenario. Other bouncing target scenario variants can be found simply by searching “bounce” or b180. For videos explaining dynamic clicking technique, see VT Matty’s How to Pasu, Snowi aim secrets, or MadBadMan aim secrets videos. 
+
+
+Overall, tracking is the most straightforward aiming category.. Tracking is about holding down the mouse button and keeping your crosshair on a singular, moving target. Tracking requires smoothness and reactivity. Precise tracking usually involves a small target moving in very readable or linear patterns, and it places an emphasis on stabilizing your wrist in terms of tension balancing to minimize jitters or shakiness in your aim. Reactive tracking usually features a larger target moving with high speed or acceleration. This places an emphasis on having swift yet controlled reactions and good movement reading.
+
+
+Precise tracking is achieved in “smooth” or thin variants of existing tracking scenarios. The idea is to feature a target that is decently hard to hit and probably at a farther distance away from you. Good smooth tracking scenarios are Smoothbot, PGTI, or Pasu TI. The key is to find a balance in the amount of tension you use in your wrist/arm, such that you are not using so much tension as to cause shakiness and not using so little tension that you are not able to sustain the motion itself.
+
+
+Reactive tracking comes in many variants, with one of the main differential factors being acceleration. Instant acceleration is present in many fast-paced games like Overwatch, and it requires a different approach that involves fast-flick reactions. When reacting in reactive tracking, however, you should focus on maintaining smoothness and stability in the reaction itself, which can be considered a type of micro adjustment. Edge tracking, which is the implementation of underaiming in aim trainers, can help to give you some extra time on target by withholding the tension in your wrist and performing a smoother reaction.
