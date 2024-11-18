@@ -2,7 +2,7 @@
 
 <span style="color:red">This project is currently in development. Expect certain features to not function as intended.</span>
 
-### A desktop assistant that provides real-time aiming advice for Esports video games using AI-powered insights.
+### A desktop assistant that provides well-informed aiming and competitive gaming advice for Esports video games using AI-powered insights.
 
 ---
 
