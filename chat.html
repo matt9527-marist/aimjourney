@@ -124,8 +124,10 @@
                     addMessage('bot', data.response); // Display the bot's response
 
                     // Save to chat data array for Excel
-                    chatData.push({ "User Prompt": userInput, "AI Response": cleanBotResponse });
-                    saveToExcel(); // Call the function to save data to Excel file
+                    if (document.getElementById('debugMode').checked) {
+                        chatData.push({ "User Prompt": userInput, "AI Response": cleanBotResponse });
+                        saveToExcel(); // Call the function to save data to Excel file
+                    }
 
                 } catch (error) {
                     console.error('Error:', error);
