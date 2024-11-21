@@ -28,11 +28,6 @@
         &lt;&lt; <!-- "<<" -->
     </div>
 
-    <!-- Forward button to navigate to secondary evaluations page, testing.html -->
-    <div id="to-testing-button" onclick="location.href='testing.html'">
-        &gt;&gt; <!-- ">>" -->
-    </div>
-
     <!-- Main content of the chat box (initially hidden during load) -->
     <div id="app">
         <h1 id="title">Aim Journey Assistant</h1>
@@ -65,6 +60,8 @@
         document.getElementById('app').style.opacity = 1; // Set app opacity to 1 to show it immediately, loader here is deprecated
 
         // Initialize conversation history
+        //! Currently not functioning as intended, must upload entire chat session
+        //! to ChatGPT each time a new message is added- potentially high usage cost.
         const conversationHistory = [];
     
         // Event listener for "SEND" button click
@@ -121,6 +118,7 @@
 
                     // Add bot response to conversation history
                     conversationHistory.push({ role: 'bot', content: botResponse });
+                    
                     addMessage('bot', data.response); // Display the bot's response
 
                     // Save to chat data array for Excel
