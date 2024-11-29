@@ -1,214 +1,94 @@
-﻿Aim trainers are independent video games, software that is secondary to real FPS games, designed for the purpose of helping FPS game players improve at their raw aiming mechanics, namely mouse control. Mouse control is the universal foundation for all aiming within FPS Esports. 
+﻿Aim trainers are independent video games, software that is secondary to real FPS games, designed for the purpose of helping FPS game players improve at their raw aiming mechanics, namely mouse control. Mouse control is the universal foundation for all aiming within FPS Esports. You can always aim train for fun, but most people start aim training because they want to elevate their skills in first-person and third-person shooter games. Let’s start with the benefits of aim training. Aim training can help you more consistently hit shots in-game, they can enable you to find more opportunities to outplay your opponents, they can help you read target movements better, and they may give you better overall control over your mouse, even in non-aiming situations. While helpful, aim trainers are NEVER a substitute for in-game practice, and if your main priority is improving at your main esport, you should only treat aim trainers as supplemental. This will affect what you practice, as well as how long you practice for. Probably the most effective split for in-game practice and aim trainer practice is 70-30 respectively, where you spend 70% of your time playing the main game, and 30% of your time playing only the most relevant scenarios within the aim trainer. [a]
 
 
-You can always aim train for fun, but most people start aim training because they want to elevate their skills in first-person and third-person shooter games. Let’s start with the benefits of aim training. Aim training can help you more consistently hit shots in-game, they can enable you to find more opportunities to outplay your opponents, they can help you read target movements better, and they may give you better overall control over your mouse, even in non-aiming situations. 
+There are some things the aim trainer cannot do. The aim trainer will not help you have better positioning in game or stronger game sense that would influence decision-making skills. Essentially, aim training will NOT help you to improve at anything that can be considered a part of game-specific knowledge or mechanics that are not aim-related.
 
 
-While helpful, aim trainers are NEVER a substitute for in-game practice, and if your main priority is improving at your main esport, you should only treat aim trainers as supplemental. This will affect what you practice, as well as how long you practice for. Probably the most effective split for in-game practice and aim trainer practice is 70-30 respectively, where you spend 70% of your time playing the main game, and 30% of your time playing only the most relevant scenarios within the aim trainer. There are some things the aim trainer cannot do.
+What is the motivation behind playing the aim trainer at all? It is about maximizing opportunities. Over ordinary in-game practice, aim training has four key advantages: isolation, repetition, customization, and feedback. Namely, this is isolation in practicing a specific skill without any distractions, repeating the same practice over and over quickly, with numerous, highly customizable scenarios, giving you instantaneous feedback on your progress.[b]
 
 
-The aim trainer will not help you have better positioning in game or stronger game sense that would influence decision-making skills. Essentially, aim training will NOT help you to improve at anything that can be considered a part of game-specific knowledge or mechanics that are not aim-related.
+When choosing an aim trainer, you should go with Kovaak’s FPS Aim Trainer, which can be installed on Steam for 10 dollars. If you want a free aim trainer instead, go with Aimlabs. Aimbeast is another paid alternative. Kovaak’s has the best scenario variety and the most scenarios to choose from, Aimlabs is often used for competitions and benchmarking, and Aimbeast is mostly for very high level players.[c]
 
 
-What is the motivation behind playing the aim trainer at all? It is about maximizing opportunities. Over ordinary in-game practice, aim training has four key advantages: isolation, repetition, customization, and feedback. Namely, this is isolation in practicing a specific skill without any distractions, repeating the same practice over and over quickly, with numerous, highly customizable scenarios, giving you instantaneous feedback on your progress.
-
-
-When choosing an aim trainer, you should go with Kovaak’s FPS Aim Trainer, which can be installed on Steam for 10 dollars. If you want a free aim trainer instead, go with Aimlabs. Aimbeast is another paid alternative. Kovaak’s has the best scenario variety and the most scenarios to choose from, Aimlabs is often used for competitions and benchmarking, and Aimbeast is mostly for very high level players.
-
-
-Do not hesitate to start aim training out of fear that your setup is not good enough. However, there are ways to upgrade your setup, such that your experience with the aim trainer and improvement progress might be elevated.
-
-
-Get at least a 144hz monitor, ideally 240hz. Get a modern gaming mouse with a good sensor and a low maintenance mousepad with a speed appropriate for you. Upgrade your PC specs. Maybe experiment with mouse skates or a gaming sleeve. Even if you are discouraged about your setup and do not want to spend a fortune, keep in mind that some very top level aimers have achieved great things on 60hz monitors. Specifically, players like eloevv and Mana. 
+Do not hesitate to start aim training out of fear that your setup is not good enough. However, there are ways to upgrade your setup, such that your experience with the aim trainer and improvement progress might be elevated. Get at least a 144hz monitor, ideally 240hz. Get a modern gaming mouse with a good sensor and a low maintenance mousepad with a speed appropriate for you. Upgrade your PC specs. Maybe experiment with mouse skates or a gaming sleeve. Even if you are discouraged about your setup and do not want to spend a fortune, keep in mind that some very top level aimers have achieved great things on 60hz monitors. Specifically, players like eloevv and Mana. [d]
 
 
 When configuring the aim trainer, you should be using an FOV (field of view) of at least 103 OW. This specific setting ensures that you will play scenarios from the right perspective and not make certain scenarios trivially easier. You can, however, raise this field of view to get a more fair playing field on scenarios or situations where you might have a lot of targets off-screen. 
 
 
-“What sensitivity should I use?” is probably the most frequently asked question by beginners. By and large, most people will say that sensitivity is up to preference, but most people use somewhere between 20cm/360° to 50cm/360°. This is not a hard rule, but most people’s ideal sensitivity lands within that range. Typically, you should prefer slower sensitivities for slower paced games that are more “flick” reliant and faster sensitivities for games that deal with diverse aiming angles, tracking, and verticality. Feel free to experiment with different sensitivities often and find what works for you.
+“What sensitivity should I use?” is probably the most frequently asked question by beginners. By and large, most people will say that sensitivity is up to preference, but most people use somewhere between 20cm/360° to 50cm/360°. This is not a hard rule, but most people’s ideal sensitivity lands within that range. Typically, you should prefer slower sensitivities for slower paced games that are more “flick” reliant and faster sensitivities for games that deal with diverse aiming angles, tracking, and verticality. Feel free to experiment with different sensitivities often and find what works for you.[e]
 
 
-Muscle memory is a misnomer in aiming. The term “muscle memory” when used improperly suggests that you should stick to a specific sensitivity across all situations to preserve consistency, and changing your sensitivity would ruin your muscle memory. This is a very simplified and inaccurate understanding of motor memory, an important idea in neuroscience. Because aiming has little to no formal research, it is best not to worry about muscle/motor memory, even when discussed as a proper neuroscience concept, as its role in aiming is not well understood.
+Muscle memory is a misnomer in aiming. The term “muscle memory” when used improperly suggests that you should stick to a specific sensitivity across all situations to preserve consistency, and changing your sensitivity would ruin your muscle memory. This is a very simplified and inaccurate understanding of motor memory, an important idea in neuroscience. Because aiming has little to no formal research, it is best not to worry about muscle/motor memory, even when discussed as a proper neuroscience concept, as its role in aiming is not well understood. Enough skilled players have shown over time and through experience that it is okay to change your sensitivity, and it is okay to use different sensitivities for different games. You can further enrich your aim training experience by using a sensitivity randomizer or RawAccel. If you would like to read more information about the matter, please view the Voltaic article on Why ‘Muscle memory’ is seen as a meme in aiming, and see VT Viscose’s video on RawAccel.[f]
 
 
-Enough skilled players have shown over time and through experience that it is okay to change your sensitivity, and it is okay to use different sensitivities for different games. You can further enrich your aim training experience by using a sensitivity randomizer or RawAccel. If you would like to read more information about the matter, please view the Voltaic article on Why ‘Muscle memory’ is seen as a meme in aiming, and see VT Viscose’s video on RawAccel.
+As for specific visual settings in the aim trainer, you should try to look towards the resources top Voltaic players have, such as VT Matty’s Visuals mastersheet. Other sources for good visuals and sounds to use in the trainer are VT Clover and Aech+. If you feel like making your own visual settings, try to pick something that is nicer on the eyes, with high contrast between the background and the targets. [g]
 
 
-As for specific visual settings in the aim trainer, you should try to look towards the resources top Voltaic players have, such as VT Matty’s Visuals mastersheet. Other sources for good visuals and sounds to use in the trainer are VT Clover and Aech+. If you feel like making your own visual settings, try to pick something that is nicer on the eyes, with high contrast between the background and the targets. 
+Aim theory describes the mechanics behind aiming and the methods used to train optimally. Aim theory dictates that all aiming situations be separated into multiple categories. These categories are Clicking, Tracking, and Switching. [h]
 
 
-Aim theory describes the mechanics behind aiming and the methods used to train optimally. Aim theory dictates that all aiming situations be separated into multiple categories. These categories are Clicking, Tracking, and Switching. 
+Static clicking is the first subcategory of Clicking. All targets in these scenarios are stationary. The goal of most static clicking scenarios is to help players famliarize themselves with basic flicking techniques. Players should expect to hit high accuracy thresholds, upwards of 90-92%. Static clicking scenario examples include 1w6ts (1wall6targets_small), 1w4ts, 1w3ts, ww3t, Wide Wall 4 targets, Fourshot, Threeshot, and other similarly named scenarios. Static clicking places a focus on the initial flick to each target, which should be fast, rigid, and explosive, versus the micro correction, which needs to be smooth, narrow, and succinct. This baseline process of initial flick into micro correction into shot confirmation is known as the Bardoz Method, coined after the former best static clicking player, Bardoz. The Bardoz Method, when performed correctly, is the current best way to maximize static clicking scenario scores and is a foundational technique for all forms of flicking-oriented aiming. The initial flick is usually expected to land at some offset difference before the target, the micro correction corrects this offset, and the shot confirmation is a brief visual check to ensure that you will land your shot. The method encourages high accuracy. Advanced levels of static clicking force the player to maintain dynamic pacing, which means that players must vary their frequency of shots depending on the spawns or the positioning of the targets on screen. Increasing pacing to eliminate nearby targets faster can be referred to as cluster farming. It often requires the player to suspend the tension in their arm and focus on being extra smooth with their wrist and fingertips. Static clicking also pushes players to develop what is known as fluidity. Fluidity holds that the time it takes to complete a micro correction and target confirmation on each target should be at a minimum. Players need to be fluid in order to reach much higher pacing on clicking scenarios and get through more targets. [i]
 
 
-Static clicking is the first subcategory of Clicking. All targets in these scenarios are stationary. The goal of most static clicking scenarios is to help players famliarize themselves with basic flicking techniques. Players should expect to hit high accuracy thresholds, upwards of 90-92%. Static clicking scenario examples include 1w6ts (1wall6targets_small), 1w4ts, 1w3ts, ww3t, Wide Wall 4 targets, Fourshot, Threeshot, and other similarly named scenarios. Static clicking places a focus on the initial flick to each target, which should be fast, rigid, and explosive, versus the micro correction, which needs to be smooth, narrow, and succinct.
+Dynamic clicking, unlike in static, involves targets moving at varied speeds. Dynamic clicking places a greater focus on target reading, especially in your peripheral vision, and the shot confirmation. The key is to be deliberate with your shots, such that you are not spamming shots, and you are properly timing clicks according to the movement you read. Dynamic clicking requires that you still maintain fast initial flicks and smooth micro corrections, but are able to do so while managing multiple moving targets. Your pacing should also be more static/constant instead of fluctuating. Having a constant pace in dynamic clicking helps us to better manage multi-target movement reading. It also encourages a smooth flow through the targets and clearer peripheral vision. Specifically in arc dynamic clicking, or bounce clicking scenarios, there is more emphasis on being smooth and effectively “juggling” targets on screen. You should always have the next target in mind when playing dynamic clicking. Roadmapping is a key skill in all multi-target scenarios, which says that you should be at least 2-3 targets ahead of your current focused target. For recommended dynamic clicking scenarios, try any Pasu type. Pasu is the prime XY axis dynamic clicking scenario, which comes in thousands of variants and is very useful to train. For more precision based dynamic clicking, you should try Popcorn variants, which is a particularly accuracy-focused and difficult bounce clicking scenario. Other bouncing target scenario variants can be found simply by searching “bounce” or b180. For videos explaining dynamic clicking technique, see VT Matty’s How to Pasu, Snowi aim secrets, or MadBadMan aim secrets videos. [j]
 
 
-This baseline process of initial flick into micro correction into shot confirmation is known as the Bardoz Method, coined after the former best static clicking player, Bardoz. The Bardoz Method, when performed correctly, is the current best way to maximize static clicking scenario scores and is a foundational technique for all forms of flicking-oriented aiming. The initial flick is usually expected to land at some offset difference before the target, the micro correction corrects this offset, and the shot confirmation is a brief visual check to ensure that you will land your shot. The method encourages high accuracy.
+Overall, tracking is the most straightforward aiming category.. Tracking is about holding down the mouse button and keeping your crosshair on a singular, moving target. Tracking requires smoothness and reactivity. Precise tracking usually involves a small target moving in very readable or linear patterns, and it places an emphasis on stabilizing your wrist in terms of tension balancing to minimize jitters or shakiness in your aim. Reactive tracking usually features a larger target moving with high speed or acceleration. This places an emphasis on having swift yet controlled reactions and good movement reading. Precise tracking is achieved in “smooth” or thin variants of existing tracking scenarios. The idea is to feature a target that is decently hard to hit and probably at a farther distance away from you. Good smooth tracking scenarios are Smoothbot, PGTI, or Pasu TI. The key is to find a balance in the amount of tension you use in your wrist/arm, such that you are not using so much tension as to cause shakiness and not using so little tension that you are not able to sustain the motion itself. Reactive tracking comes in many variants, with one of the main differential factors being acceleration. Instant acceleration is present in many fast-paced games like OW, and it requires a different approach that involves fast-flick reactions. When reacting in reactive tracking, however, you should focus on maintaining smoothness and stability in the reaction itself, which can be considered a type of micro adjustment. Edge tracking, which is the implementation of underaiming in aim trainers, can help to give you some extra time on target by withholding the tension in your wrist and performing a smoother reaction. The best reactive scenario types are Air, Ground Plaza, and Fuglaa variants. Air and Ground Plaza are the definitive tracking gauntlet scenarios in Kovaak’s. They are endurance tests where underaiming and movement reading are paramount to success. For general tracking practice, good control fundamentals are vital. Play scenarios like controlsphere or Whisphere to build upon movement reading fundamentals or reaction smoothness. If you find that you have shaky micros or aim that does not look stable, control scenarios like these should help you to develop proper adjustments and tension balancing.[k]
 
 
-Advanced levels of static clicking force the player to maintain dynamic pacing, which means that players must vary their frequency of shots depending on the spawns or the positioning of the targets on screen. Increasing pacing to eliminate nearby targets faster can be referred to as cluster farming. It often requires the player to suspend the tension in their arm and focus on being extra smooth with their wrist and fingertips. 
+Target switching is the third foundational aiming category, and it essentially combines the principles used in both clicking and tracking categories, where there are multiple targets that are tracked for short periods of time. Speed switching involves low time-to-kill targets that move in very linear patterns. Evasive switching is very similar but with more parabolic or hard-to-hit movement patterns. Most if not all target switching requires you to take direct, accurate flicks and transition into a smooth tracking motion. Key skills used to improve in target switching are peripheral awareness, target prioritization, and flick accuracy. The goal is to land flicks directly without requiring a micro correction. Roadmapping and choosing targets before you reach them is critical in speed switching tasks like VoxTS or PsalmTS. Pokeball is another speed switching-like variant that is also a static scenario, and it places a great emphasis on flick accuracy and having clean initial flick landings. In evasive switching, the goal is relatively the same as speed switching. With targets that involve more verticality or are simply harder to hit, choosing targets becomes a much bigger problem. In evasive switching, you need to learn how to do interception of multiple targets and choose ones that have most recently changed movement direction, as you can trust they will not change again. You also need to develop a seamless transition between the flick landing onto the target and the continuation of the smooth tracking motion after.[l]
 
 
-Static clicking also pushes players to develop what is known as fluidity. Fluidity holds that the time it takes to complete a micro correction and target confirmation on each target should be at a minimum. Players need to be fluid in order to reach much higher pacing on clicking scenarios and get through more targets. 
+Strafe aiming is a tangential aiming category that involves more movement techniques than specifically mouse control. In all real FPS games, we shoot at moving targets. The most basic two forms of strafe-aim are mirroring and anti-mirroring. Mirroring involves moving in the same direction as your target on screen; if they go right, you go right. Mirroring is inward-angled, meaning you can move your mouse less. Anti-mirroring has you move in the opposite direction as your target on screen; if they go right, you go left. Anti-mirroring is outward-angled, requiring more mouse movement to compensate.[m]
 
 
-Dynamic clicking, unlike in static, involves targets moving at varied speeds. Dynamic clicking places a greater focus on target reading, especially in your peripheral vision, and the shot confirmation. The key is to be deliberate with your shots, such that you are not spamming shots, and you are properly timing clicks according to the movement you read. Dynamic clicking requires that you still maintain fast initial flicks and smooth micro corrections, but are able to do so while managing multiple moving targets. Your pacing should also be more static/constant instead of fluctuating. 
-
-
-Having a constant pace in dynamic clicking helps us to better manage multi-target movement reading. It also encourages a smooth flow through the targets and clearer peripheral vision. Specifically in arc dynamic clicking, or bounce clicking scenarios, there is more emphasis on being smooth and effectively “juggling” targets on screen. You should always have the next target in mind when playing dynamic clicking. Roadmapping is a key skill in all multi-target scenarios, which says that you should be at least 2-3 targets ahead of your current focused target.
-
-
-For recommended dynamic clicking scenarios, try any Pasu type. Pasu is the prime XY axis dynamic clicking scenario, which comes in thousands of variants and is very useful to train. For more precision based dynamic clicking, you should try Popcorn variants, which is a particularly accuracy-focused and difficult bounce clicking scenario. Other bouncing target scenario variants can be found simply by searching “bounce” or b180. For videos explaining dynamic clicking technique, see VT Matty’s How to Pasu, Snowi aim secrets, or MadBadMan aim secrets videos. 
-
-
-Overall, tracking is the most straightforward aiming category.. Tracking is about holding down the mouse button and keeping your crosshair on a singular, moving target. Tracking requires smoothness and reactivity. Precise tracking usually involves a small target moving in very readable or linear patterns, and it places an emphasis on stabilizing your wrist in terms of tension balancing to minimize jitters or shakiness in your aim. Reactive tracking usually features a larger target moving with high speed or acceleration. This places an emphasis on having swift yet controlled reactions and good movement reading.
-
-
-Precise tracking is achieved in “smooth” or thin variants of existing tracking scenarios. The idea is to feature a target that is decently hard to hit and probably at a farther distance away from you. Good smooth tracking scenarios are Smoothbot, PGTI, or Pasu TI. The key is to find a balance in the amount of tension you use in your wrist/arm, such that you are not using so much tension as to cause shakiness and not using so little tension that you are not able to sustain the motion itself.
-
-
-Reactive tracking comes in many variants, with one of the main differential factors being acceleration. Instant acceleration is present in many fast-paced games like OW, and it requires a different approach that involves fast-flick reactions. When reacting in reactive tracking, however, you should focus on maintaining smoothness and stability in the reaction itself, which can be considered a type of micro adjustment. Edge tracking, which is the implementation of underaiming in aim trainers, can help to give you some extra time on target by withholding the tension in your wrist and performing a smoother reaction.
-
-
-The best reactive scenario types are Air, Ground Plaza, and Fuglaa variants. Air and Ground Plaza are the definitive tracking gauntlet scenarios in Kovaak’s. They are endurance tests where underaiming and movement reading are paramount to success. For general tracking practice, good control fundamentals are vital. Play scenarios like controlsphere or Whisphere to build upon movement reading fundamentals or reaction smoothness. If you find that you have shaky micros or aim that does not look stable, control scenarios like these should help you to develop proper adjustments and tension balancing.
-
-
-Target switching is the third foundational aiming category, and it essentially combines the principles used in both clicking and tracking categories, where there are multiple targets that are tracked for short periods of time. Speed switching involves low time-to-kill targets that move in very linear patterns. Evasive switching is very similar but with more parabolic or hard-to-hit movement patterns. Most if not all target switching requires you to take direct, accurate flicks and transition into a smooth tracking motion.
-
-
-Key skills used to improve in target switching are peripheral awareness, target prioritization, and flick accuracy. The goal is to land flicks directly without requiring a micro correction. Roadmapping and choosing targets before you reach them is critical in speed switching tasks like VoxTS or PsalmTS. Pokeball is another speed switching-like variant that is also a static scenario, and it places a great emphasis on flick accuracy and having clean initial flick landings. 
-
-
-In evasive switching, the goal is relatively the same as speed switching. With targets that involve more verticality or are simply harder to hit, choosing targets becomes a much bigger problem. In evasive switching, you need to learn how to do interception of multiple targets and choose ones that have most recently changed movement direction, as you can trust they will not change again. You also need to develop a seamless transition between the flick landing onto the target and the continuation of the smooth tracking motion after.
-
-
-Strafe aiming is a tangential aiming category that involves more movement techniques than specifically mouse control. In all real FPS games, we shoot at moving targets. The most basic two forms of strafe-aim are mirroring and anti-mirroring. Mirroring involves moving in the same direction as your target on screen; if they go right, you go right. Mirroring is inward-angled, meaning you can move your mouse less. Anti-mirroring has you move in the opposite direction as your target on screen; if they go right, you go left. Anti-mirroring is outward-angled, requiring more mouse movement to compensate.
-
-
-The Voltaic Overwatch routine is a well-rounded routine for supplementary aim improvement in Overwatch 2 that is recommended by VT Dove, Kabe, Lab, Hauntr, Matty, and Rigsychu. It involves various Dynamic scenarios with challenging applications in-game. There is also a strong emphasis on reading skills through reactive and dynamic dominant tasks.
-
-
-These routines include scenarios that are very closely related to in-game situations, such as Glidetrack where you need to track a target precisely and accurately so you can maximize your damage output. Blinktrack, Pilltrack and Axitrack also add important elements like smooth and fast tracking and near-instant acceleration movement changes. This applies to heroes like Soldier 76 and Tracer. Smoothness is always useful and helps you use the right amount of tension so it’s easier to be precise. Both Hightrack and Lowtrack are recommended, and can be useful if you struggle when you’re angled at a disadvantage or advantage.
-
-
-The Multi Clicking scenarios such as Angleshot Multi, Axishot Multi and Surgeshot Multi should help you focus on reading a target and constantly reacting to its direction changes, while timing your clicks consecutively on the target in order to eliminate it. Certain types of switching scenarios have some application for Overwatch because you learn to read targets, acquire them and switch quickly then eliminate them efficiently. The clicking scenarios apply to all the click-type heroes such as Widowmaker, Cassidy, Ashe and even Sojourn with her Railgun.
+The Voltaic Overwatch routine is a well-rounded routine for supplementary aim improvement in Overwatch 2 that is recommended by VT Dove, Kabe, Lab, Hauntr, Matty, and Rigsychu. It involves various Dynamic scenarios with challenging applications in-game. There is also a strong emphasis on reading skills through reactive and dynamic dominant tasks. These routines include scenarios that are very closely related to in-game situations, such as Glidetrack where you need to track a target precisely and accurately so you can maximize your damage output. Blinktrack, Pilltrack and Axitrack also add important elements like smooth and fast tracking and near-instant acceleration movement changes. This applies to heroes like Soldier 76 and Tracer. Smoothness is always useful and helps you use the right amount of tension so it’s easier to be precise. Both Hightrack and Lowtrack are recommended, and can be useful if you struggle when you’re angled at a disadvantage or advantage. The Multi Clicking scenarios such as Angleshot Multi, Axishot Multi and Surgeshot Multi should help you focus on reading a target and constantly reacting to its direction changes, while timing your clicks consecutively on the target in order to eliminate it. Certain types of switching scenarios have some application for Overwatch because you learn to read targets, acquire them and switch quickly then eliminate them efficiently. The clicking scenarios apply to all the click-type heroes such as Widowmaker, Cassidy, Ashe and even Sojourn with her Railgun.[n]
 
 
 The Static Clicking scenarios are useful in Overwatch because they improve timing of clicks, speed, efficiency of motion, micro-corrections, precision and target acquisition with a high emphasis on efficiency. They are useful for Widowmaker, Ashe and Cassidy (click-type weapons) because they help you make more consistent and efficient flicks and micro-corrections. Do your best to keep clean lines on your initial flicks and follow them up with micro-corrections that land directly on the bot. If either your accuracy or speed is holding you back, adjust your practice to account for this. 
 
 
-The Dynamic Clicking scenarios are useful in Overwatch because they improve reading skills, speed, precision, target confirmation and smooth target approaches. They are useful for Cassidy, Ashe and Widowmaker (click-type weapons) as it improves reading skills and increases consistency of hitting targets with dynamic movements. These are fundamental skills necessary to effectively hit targets on Overwatch. 
+The Dynamic Clicking scenarios are useful in Overwatch because they improve reading skills, speed, precision, target confirmation and smooth target approaches. They are useful for Cassidy, Ashe and Widowmaker (click-type weapons) as it improves reading skills and increases consistency of hitting targets with dynamic movements. These are fundamental skills necessary to effectively hit targets on Overwatch. In the Angleshot, Flowshot, Boltshot, Blinkshot, Dashshot, and Strafeshot scenarios, you want to track each target for a short period of time in order to confirm you’ll hit it, while avoiding being misdirected by a sudden direction change. In the Skyshot and Hypershot scenarios, you want to quickly acquire each target and click as soon as you’ve confirmed your hit. In the Leapshot 360 and Popshot scenarios, you want to read each target briefly in order to confirm you’ll hit it, while approaching the target steadily. The Multi Clicking scenarios are useful in Overwatch because they Improves reading skills, speed, click-timing, precision, target confirmation and smooth target re-acquiring. They are useful for Cassidy and Ashe (click-type weapons) as most targets in Overwatch need to be hit multiple times in order to be eliminated. Multi Clicking focuses on clicking a high-ttk or invincible target multiple times or constantly in order to practice clicking on erratically moving targets. Isolating this type of aiming with ample repetition helps you build proper click habits that will carry over in-game.[o] In Multi Clicking scenarios such as the Arcshot Multi and Surgeshot Multi scenarios, you want to acquire, track and read a target’s movement while mimicking its strafes smoothly and clicking it at least 3x times to eliminate it. After this is done, move to the next target and repeat the former steps, while keeping transitions smooth and efficient.
 
 
-In the Angleshot, Flowshot, Boltshot, Blinkshot, Dashshot, and Strafeshot scenarios, you want to track each target for a short period of time in order to confirm you’ll hit it, while avoiding being misdirected by a sudden direction change. In the Skyshot and Hypershot scenarios, you want to quickly acquire each target and click as soon as you’ve confirmed your hit. In the Leapshot 360 and Popshot scenarios, you want to read each target briefly in order to confirm you’ll hit it, while approaching the target steadily.
+The Reactive Tracking scenarios are useful in Overwatch because they improve reading skills, reactivity and reacquisition on blinking or dashing targets. They are useful for Soldier 76 and Tracer as most targets will be moving erratically and constantly changing directions which you need to react to in order to track them again. Also helps building important tracking fundamentals, which includes underaiming (tracking to the closer edge of the target), tracking in one smooth motion instead of multiple micro-jitters and smooth reacquisitions when a target changes directions, blinks or dashes. In Reactive Tracking scenarios, you should hold down fire during the entire duration of the scenario. You should also focus more on the target than your crosshair. Try to match the target’s movement instead of chasing after it. Do your best to be smooth and focus on reading the target’s movement, so you can react as soon as possible to any direction changes. Be reactive, not predictive. An additional tip is to assume the target won’t change directions, and to only react when it actually does, then smoothly return back to the target. Many tracking scenarios in Overwatch are considered to be “pure reactive,” such that they feature instant acceleration. These scenarios are perfect for training tracking in a game where almost all movement acceleration is instantaneous.[p]
 
 
-The Multi Clicking scenarios are useful in Overwatch because they Improves reading skills, speed, click-timing, precision, target confirmation and smooth target re-acquiring. They are useful for Cassidy and Ashe (click-type weapons) as most targets in Overwatch need to be hit multiple times in order to be eliminated. Multi Clicking focuses on clicking a high-ttk or invincible target multiple times or constantly in order to practice clicking on erratically moving targets. Isolating this type of aiming with ample repetition helps you build proper click habits that will carry over in-game.
+The Precise Tracking scenarios are useful in Overwatch because they improve reading skills, as well as reactivity and reacquisition on blinking or dashing targets. They are useful for Soldier 76 and Tracer as most targets will be moving erratically and constantly changing directions which you need to react to in order to track them again. They also help building important tracking fundamentals, which includes underaiming (tracking to the closer edge of the target), tracking in one smooth motion instead of multiple micro-jitters and smooth reacquisitions when a target changes directions, blinks or dashes. In Precise Tracking scenarios, you should hold down fire during the entire duration of the scenario. Move your mouse in one steady motion while matching the target’s speed, and try to avoid any inefficiencies and jitter.[q]
 
 
-In Multi Clicking scenarios such as the Arcshot Multi and Surgeshot Multi scenarios, you want to acquire, track and read a target’s movement while mimicking its strafes smoothly and clicking it at least 3x times to eliminate it. After this is done, move to the next target and repeat the former steps, while keeping transitions smooth and efficient.
+The Speed Switching scenarios, such as Pokeball, are useful in Overwatch because they improve speed, target acquisition and target confirmation. They are useful for all Hitscan DPS heroes, helping to increase up-time and to make swifter and more accurate target switches. This will increase your DPS and the amount of pressure you can do to the enemy. In Speed Switching scenarios, you should hold down fire during the entire duration of the scenario (this is required in Pokeball scenarios). Make sure to force full eliminations as much as possible, leaving as little targets with small amounts of health up as possible. Attempt to land your initial flick directly on the bot with no micro-correction and keep this action consistent on both small and large switches. The Evasive Switching scenarios are useful in Overwatch because they improve speed, target acquisition, smooth (re-)acquiring and target confirmation. Since Overwatch is a team based game, there will be many opportunities where targets will have varying health while still strafing to dodge you or your teammates. The Evasive Switching scenarios will help you work on that. They are useful for all Hitscan DPS heroes, helping to increase up-time and making swifter and more accurate target switches. This will increase your DPS and the amount of pressure you can do to the enemy. In Evasive Switching scenarios, you should hold down fire during the entire duration of the scenario. Land your initial flick directly on each target and smoothly track each target to completion. Time your switches to close the margin between the target's elimination and the start of your flick. Smooth transitions from target to target will make reading their movements much easier.[r]
 
 
-The Reactive Tracking scenarios are useful in Overwatch because they improve reading skills, reactivity and reacquisition on blinking or dashing targets. They are useful for Soldier 76 and Tracer as most targets will be moving erratically and constantly changing directions which you need to react to in order to track them again. Also helps building important tracking fundamentals, which includes underaiming (tracking to the closer edge of the target), tracking in one smooth motion instead of multiple micro-jitters and smooth reacquisitions when a target changes directions, blinks or dashes.
+Some helpful Static Clicking scenarios for Overwatch are Threeshot, Vibeshot, and Hexshot. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels, as well as hero-specific versions, such as VT Hexshot Ashe. Some helpful Dynamic Clicking scenarios for Overwatch are Angleshot, Flowshot, Boltshot, Blinkshot, Dashshot, and Strafeshot, Popshot, Rainshot, and Adjust Click. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. Some helpful Multi Clicking scenarios for Overwatch are Arcshot Multi, Surgeshot Multi, Angleshot Multi, Axishot Multi, Trackshot, and Curveshot Multi. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. Some helpful Reactive Tracking scenarios for Overwatch are Blinktrack, Pilltrack, Axitrack Overwatch, Longtrack, Blinktrack, Lowtrack, Hightrack, Close Fast Strafes Invincible, Flicker Plaza Dash, 180 Blink Track, Teletrack, and Angelic Close Fast Strafes. These scenarios may have novice, intermediate, advanced, or master/grandmaster versions for players of different skill levels. Some helpful Precise Tracking scenarios for Overwatch are Controltrack Blink, Glidetrack, Centering II 180, and Steadytrack. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. Some helpful Speed Switching scenarios for Overwatch are Pokeball and Multishot Pokeball. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels, as well as hero-specific versions, such as VT Multishot Pokeball Ashe or VT Multishot Pokeball Widow (for Widowmaker). Some helpful Evasive Switching scenarios for Overwatch are Regenspheres and Dodgeswitch. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels.[s]
 
 
-In Reactive Tracking scenarios, you should hold down fire during the entire duration of the scenario. You should also focus more on the target than your crosshair. Try to match the target’s movement instead of chasing after it. Do your best to be smooth and focus on reading the target’s movement, so you can react as soon as possible to any direction changes. Be reactive, not predictive.
-An additional tip is to assume the target won’t change directions, and to only react when it actually does, then smoothly return back to the target.
+To help improve your aim on Soldier 76, some helpful scenarios to play are Centering II 180, Steadytrack, Glidertrack, Controltrack Blink, Longtrack, Blinktrack, Axitrack, Lowtrack, Hightrack, Regenspheres, and Dodgeswitch. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. These scenarios are mostly focused on precise and reactive tracking.[t]
 
 
-The Precise Tracking scenarios are useful in Overwatch because they improve reading skills, as well as reactivity and reacquisition on blinking or dashing targets. They are useful for Soldier 76 and Tracer as most targets will be moving erratically and constantly changing directions which you need to react to in order to track them again. They also help building important tracking fundamentals, which includes underaiming (tracking to the closer edge of the target), tracking in one smooth motion instead of multiple micro-jitters and smooth reacquisitions when a target changes directions, blinks or dashes.
+To help improve your aim on Cassidy, some helpful scenarios to play are Multishot Pokeball, Angleshot, Popshot, Adjust Click, Angleshot Multi, Axishot Multi, Surgeshot Multi, Dashshot, Blinkshot, Curveshot, and Boltshot. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. These scenarios are mostly focused on dynamic clicking and multiclicking.[u]
 
 
-In Precise Tracking scenarios, you should hold down fire during the entire duration of the scenario.
-Move your mouse in one steady motion while matching the target’s speed, and try to avoid any inefficiencies and jitter.
+To help improve your aim on Sojourn, some helpful scenarios to play are Dodgeswitch, Blinktrack, Axitrack, Lowtrack, Hightrack, Angleshot, Popshot, Adjust Click, Dashshot, Blinkshot, Trackshot, and Curveshot. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. These scenarios are mostly focused on Close Reactive Tracking, Dynamic Clicking, and Hybrid Track Shots. [v]
 
 
-The Speed Switching scenarios, such as Pokeball, are useful in Overwatch because they improve speed, target acquisition and target confirmation. They are useful for all Hitscan DPS heroes, helping to increase up-time and to make swifter and more accurate target switches. This will increase your DPS and the amount of pressure you can do to the enemy. 
+To help improve your aim on Widowmaker, some helpful scenarios to play are Angleshot, Curveshot, Flowshot, Blinkshot, Multishot Pokeball, Threeshot, Vibeshot, Hexshot, Skyshot, Paceshot, and Peekshot. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. All of the scenarios mentioned here also have Widowmaker-specific versions (such as VT Curveshot Widow, VT Vibeshot Widow). These scenarios are mostly focused on Dynamic and Static Flicks at Scoped FOV.[w]
 
 
-In Speed Switching scenarios, you should hold down fire during the entire duration of the scenario (this is required in Pokeball scenarios). Make sure to force full eliminations as much as possible, leaving as little targets with small amounts of health up as possible. Attempt to land your initial flick directly on the bot with no micro-correction and keep this action consistent on both small and large switches.
+To help improve your aim on Ashe, some helpful scenarios to play are Angleshot, Curveshot, Boltshot, Flowshot, Blinkshot, Multishot Pokeball, Angleshot Multi, Axishot Multi, Surgeshot Multi, Hexshot, Paceshot, and Hypershot. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. All of the scenarios mentioned here also have Ashe-specific versions (such as VT Boltshot Ashe Advanced, VT Blinkshot Ashe). These scenarios are mostly focused on Dynamic, Partial multiclick and Static Flicks at Scoped FOV.[x]
 
 
-The Evasive Switching scenarios are useful in Overwatch because they improve speed, target acquisition, smooth (re-)acquiring and target confirmation. Since Overwatch is a team based game, there will be many opportunities where targets will have varying health while still strafing to dodge you or your teammates. The Evasive Switching scenarios will help you work on that.
-They are useful for all Hitscan DPS heroes, helping to increase up-time and making swifter and more accurate target switches. This will increase your DPS and the amount of pressure you can do to the enemy.
+To help improve your aim on Tracer, some helpful scenarios to play are Close Fast Strafes Invincible, Flicker Plaza Dash, 180 Blink Track, Teletrack, Angelic Close Fast Strafes, Blinktrack, Axitrack, and Pilltrack. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. These scenarios are mostly focused on close range reactive tracking.[y]
 
 
-In Evasive Switching scenarios, you should hold down fire during the entire duration of the scenario. Land your initial flick directly on each target and smoothly track each target to completion. Time your switches to close the margin between the target's elimination and the start of your flick. Smooth transitions from target to target will make reading their movements much easier.
+A subset of aim that remains difficult to train within Valorant is mouse control, which is rarely addressed and improved upon in detail. The Voltaic x Aim Lab VALORANT routine will offer purposefully isolated mouse control training specific to aiming in VALORANT, with repetition that vastly outpaces what could be achieved within the game itself. The first routine is a warm-up routine which you can play at any level. The second routine is a more advanced routine that is recommended for diamond or above, but it is also playable at any level. Note that these routines are only supplementary and playing them alone will not improve your aim, you must play these in conjunction with VALORANT. It is highly recommended to use this routine in combination with Deathmatch, this way you can effectively translate the movements learned towards the game. 5v5 competitive modes like ranked, scrimmages, and matches should be the bulk of your time spent on improving at the game. Ideally, you will play Aim Lab, Deathmatch and Valorant each day to hone your skills. Just playing the Valorant routine mindlessly is not sufficient, if you want to improve effectively you need to practice deliberately. Whether it’s on your own or through assistance, it’s imperative that you properly dissect the aspects being trained in each task, along with your personal strengths and weaknesses for each one. Focus on good habits such as retaining smoothness, timing your switches, and keeping your subsequent targets in mind. As a general rule you want to avoid wasting any mouse movements as it will drastically improve your efficiency and speed.[z]
 
 
-Some helpful Static Clicking scenarios for Overwatch are Threeshot, Vibeshot, and Hexshot. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels, as well as hero-specific versions, such as VT Hexshot Ashe. 
+A quick Valorant warmup routine involves playing these scenarios: VT berryTS Valorant, VT Sky Dots Micro 30% Smaller, VT Floating Dots Goated Valorant, and VT 1w2ts Smallflicks Valorant. This routine is meant to be short, no longer than 15 minutes. The tasks cover precise micro-corrections and click-timing mixed with speedy flicks on a wide array of angles. VT Cartoon recommends short intensive warmups followed by deathmatch games as the best way to prepare for ranked sessions. The full Voltaic Valorant routine recommended for players Voltaic Diamond and above involves playing these scenarios: Reactive Click Widewall Valorant, Valorant Smallflicks, Close Range Valorant Tracking, ww3t Pokeball Valorant, Pokeball Valorant, Sky Dots Micro 30% Smaller, Smoothsphere Valorant, TMPspeedTS Valorant, mpXY Valorant, 1w4ts VSS Valorant, 1w2ts Smallflicks Valorant, berryTS Valorant, and Floating Dots Goated Valorant. Some Static Clicking scenarios that are helpful for Valorant are Reactive Click Widewall Valorant,  Valorant Smallflicks, Sky Dots Micro 30% Smaller, mpXY Valorant, 1w4ts VSS Valorant, 1w2ts Smallflicks Valorant, and Floating Dots Goated Valorant. Some Reactive Tracking scenarios that are helpful for Valorant are Close Range Valorant Tracking, which helps to improve your horizontal smoothness and reactivity to help you react quickly to directional changes, and Smoothsphere Valorant, which helps practice your 360 tracking and precise tracking. This scenario also teaches you how to use most of your mousepad when tracking a target, and tracking at awkward angles. Some Speed Switching scenarios that are helpful for Valorant are ww3t Pokeball Valorant, 1w2ts Pokeball Valorant, MPspeedTS Valorant, and berryTS Valorant.[aa]
 
 
-Some helpful Dynamic Clicking scenarios for Overwatch are Angleshot, Flowshot, Boltshot, Blinkshot, Dashshot, and Strafeshot, Popshot, Rainshot, and Adjust Click. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels.
-
-
-Some helpful Multi Clicking scenarios for Overwatch are Arcshot Multi, Surgeshot Multi, Angleshot Multi, Axishot Multi, Trackshot, and Curveshot Multi. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels.
-
-
-Some helpful Reactive Tracking scenarios for Overwatch are Blinktrack, Pilltrack, Axitrack Overwatch, Longtrack, Blinktrack, Lowtrack, Hightrack, Close Fast Strafes Invincible, Flicker Plaza Dash, 180 Blink Track, Teletrack, and Angelic Close Fast Strafes. These scenarios may have novice, intermediate, advanced, or master/grandmaster versions for players of different skill levels.
-
-
-Some helpful Precise Tracking scenarios for Overwatch are Controltrack Blink, Glidetrack, Centering II 180, and Steadytrack. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels.
-
-
-Some helpful Speed Switching scenarios for Overwatch are Pokeball and Multishot Pokeball. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels, as well as hero-specific versions, such as VT Multishot Pokeball Ashe or VT Multishot Pokeball Widow (for Widowmaker).
-
-
-Some helpful Evasive Switching scenarios for Overwatch are Regenspheres and Dodgeswitch. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels.
-
-
-To help improve your aim on Soldier 76, some helpful scenarios to play are Centering II 180, Steadytrack, Glidertrack, Controltrack Blink, Longtrack, Blinktrack, Axitrack, Lowtrack, Hightrack, Regenspheres, and Dodgeswitch. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. These scenarios are mostly focused on precise and reactive tracking.
-
-
-To help improve your aim on Cassidy, some helpful scenarios to play are Multishot Pokeball, Angleshot, Popshot, Adjust Click, Angleshot Multi, Axishot Multi, Surgeshot Multi, Dashshot, Blinkshot, Curveshot, and Boltshot. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. These scenarios are mostly focused on dynamic clicking and multiclicking.
-
-
-To help improve your aim on Sojourn, some helpful scenarios to play are Dodgeswitch, Blinktrack, Axitrack, Lowtrack, Hightrack, Angleshot, Popshot, Adjust Click, Dashshot, Blinkshot, Trackshot, and Curveshot. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. These scenarios are mostly focused on Close Reactive Tracking, Dynamic Clicking, and Hybrid Track Shots. 
-
-
-To help improve your aim on Widowmaker, some helpful scenarios to play are Angleshot, Curveshot, Flowshot, Blinkshot, Multishot Pokeball, Threeshot, Vibeshot, Hexshot, Skyshot, Paceshot, and Peekshot. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. All of the scenarios mentioned here also have Widowmaker-specific versions (such as VT Curveshot Widow, VT Vibeshot Widow). These scenarios are mostly focused on Dynamic and Static Flicks at Scoped FOV.
-
-
-To help improve your aim on Ashe, some helpful scenarios to play are Angleshot, Curveshot, Boltshot, Flowshot, Blinkshot, Multishot Pokeball, Angleshot Multi, Axishot Multi, Surgeshot Multi, Hexshot, Paceshot, and Hypershot. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. All of the scenarios mentioned here also have Ashe-specific versions (such as VT Boltshot Ashe Advanced, VT Blinkshot Ashe). These scenarios are mostly focused on Dynamic, Partial multiclick and Static Flicks at Scoped FOV.
-
-
-To help improve your aim on Tracer, some helpful scenarios to play are Close Fast Strafes Invincible, Flicker Plaza Dash, 180 Blink Track, Teletrack, Angelic Close Fast Strafes, Blinktrack, Axitrack, and Pilltrack. These scenarios may have novice, intermediate, or advanced versions for players of different skill levels. These scenarios are mostly focused on close range reactive tracking.
-
-
-A subset of aim that remains difficult to train within Valorant is mouse control, which is rarely addressed and improved upon in detail. The Voltaic x Aim Lab VALORANT routine will offer purposefully isolated mouse control training specific to aiming in VALORANT, with repetition that vastly outpaces what could be achieved within the game itself. The first routine is a warm-up routine which you can play at any level. The second routine is a more advanced routine that is recommended for diamond or above, but it is also playable at any level.
-
-
-Note that these routines are only supplementary and playing them alone will not improve your aim, you must play these in conjunction with VALORANT. It is highly recommended to use this routine in combination with Deathmatch, this way you can effectively translate the movements learned towards the game. 5v5 competitive modes like ranked, scrimmages, and matches should be the bulk of your time spent on improving at the game. Ideally, you will play Aim Lab, Deathmatch and Valorant each day to hone your skills.
-
-
-Just playing the Valorant routine mindlessly is not sufficient, if you want to improve effectively you need to practice deliberately. Whether it’s on your own or through assistance, it’s imperative that you properly dissect the aspects being trained in each task, along with your personal strengths and weaknesses for each one. Focus on good habits such as retaining smoothness, timing your switches, and keeping your subsequent targets in mind. As a general rule you want to avoid wasting any mouse movements as it will drastically improve your efficiency and speed.
-
-
-A quick Valorant warmup routine involves playing these scenarios: VT berryTS Valorant, VT Sky Dots Micro 30% Smaller, VT Floating Dots Goated Valorant, and VT 1w2ts Smallflicks Valorant. This routine is meant to be short, no longer than 15 minutes. The tasks cover precise micro-corrections and click-timing mixed with speedy flicks on a wide array of angles. VT Cartoon recommends short intensive warmups followed by deathmatch games as the best way to prepare for ranked sessions.
-
-
-The full Voltaic Valorant routine recommended for players Voltaic Diamond and above involves playing these scenarios: Reactive Click Widewall Valorant, Valorant Smallflicks, Close Range Valorant Tracking, ww3t Pokeball Valorant, Pokeball Valorant, Sky Dots Micro 30% Smaller, Smoothsphere Valorant, TMPspeedTS Valorant, mpXY Valorant, 1w4ts VSS Valorant, 1w2ts Smallflicks Valorant, berryTS Valorant, and Floating Dots Goated Valorant. 
-
-
-Some Static Clicking scenarios that are helpful for Valorant are Reactive Click Widewall Valorant,  Valorant Smallflicks, Sky Dots Micro 30% Smaller, mpXY Valorant, 1w4ts VSS Valorant, 1w2ts Smallflicks Valorant, and Floating Dots Goated Valorant.
-
-
-Some Reactive Tracking scenarios that are helpful for Valorant are Close Range Valorant Tracking, which helps to improve your horizontal smoothness and reactivity to help you react quickly to directional changes, and Smoothsphere Valorant, which helps practice your 360 tracking and precise tracking. This scenario also teaches you how to use most of your mousepad when tracking a target, and tracking at awkward angles.
-
-
-Some Speed Switching scenarios that are helpful for Valorant are ww3t Pokeball Valorant, 1w2ts Pokeball Valorant, MPspeedTS Valorant, and berryTS Valorant.
-
-
-Some helpful clicking scenarios for CS/Counter Strike or Valorant in Kovaaks are voxTargetSwitch click, 1wall5targets_pasu slow, patTargetClick 1shot, Wide Wall 3 Targets, Wide Wall 4 Targets, Floating Heads Timing, tamSpeed 2bps, Reflex Micro++ Flick Reload, Microshot Speed Medium, Reactive Clicking, 1w2ts reload, 5 sphere hipfire extra small, 6wall18targets small reload, Floating Heads Timing 400%, voxTargetClick 20% small, Pasu Small Reload, patTargetClick small 1shot, 1w3ts, and 1w4ts reload. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels. 
-
-
-Some helpful tracking scenarios for CS/Counter Strike or Valorant in Kovaaks are Thin Gauntlet, Centering I, SmoothBot Invincible, and Thin Gauntlet. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels.
-
-
-Some helpful target switching scenarios for CS/Counter Strike or Valorant in Kovaaks are patTargetSwitch, Pokeball Frenzy Auto TE, voxTS Voltaic, Pokeball Frenzy Auto 1w2ts, Pokeball auto ww6t, and Pokeball Frenzy Auto Small. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels.
-
-
-Some helpful movement-clicking scenarios for CS/Counter Strike or Valorant in Kovaaks are voxTargetClick, Pasu Dodge EES 180 and Pistol Strafe Gallery Small. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels.
+Some helpful clicking scenarios for CS/Counter Strike or Valorant in Kovaaks are voxTargetSwitch click, 1wall5targets_pasu slow, patTargetClick 1shot, Wide Wall 3 Targets, Wide Wall 4 Targets, Floating Heads Timing, tamSpeed 2bps, Reflex Micro++ Flick Reload, Microshot Speed Medium, Reactive Clicking, 1w2ts reload, 5 sphere hipfire extra small, 6wall18targets small reload, Floating Heads Timing 400%, voxTargetClick 20% small, Pasu Small Reload, patTargetClick small 1shot, 1w3ts, and 1w4ts reload. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels. Some helpful tracking scenarios for CS/Counter Strike or Valorant in Kovaaks are Thin Gauntlet, Centering I, SmoothBot Invincible, and Thin Gauntlet. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels. Some helpful target switching scenarios for CS/Counter Strike or Valorant in Kovaaks are patTargetSwitch, Pokeball Frenzy Auto TE, voxTS Voltaic, Pokeball Frenzy Auto 1w2ts, Pokeball auto ww6t, and Pokeball Frenzy Auto Small. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels. Some helpful movement-clicking scenarios for CS/Counter Strike or Valorant in Kovaaks are voxTargetClick, Pasu Dodge EES 180 and Pistol Strafe Gallery Small. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels.
 
 
 An easy Kovaaks routine to help your aim in CS/Counter Strike or Valorant involves playing Thin Gauntlet Easy or Centering I Easy, patTargetSwitch, Pokeball Frenzy Auto TE, voxTargetSwitch click, 1wall5targets_pasu slow, patTargetClick 1shot, Wide Wall 3 Targets, Floating Heads Timing Easy, voxTargetClick Easy Strafe, Reflex Micro++ Flick Reload, Microshot Speed Medium, and Reactive Clicking. This routine focuses on different aspects that will be useful in real game situations, such as being smooth when spraying or acquiring targets, so that it is easier to actually time your shots. This routine also focuses on target acquisition and speed, so that you can acquire targets more accurately and faster, which is why the switching scenarios are added to the routine. The clicking scenarios should help with target acquisition, click-timing, reaction based clicking, reading skills, and micro-adjustments. 
@@ -220,22 +100,7 @@ An advanced Kovaaks routine to help your aim in CS/Counter Strike or Valorant in
 You don’t get great aim in VALORANT or CS/Counter Strike just by doing Kovaaks or Aimlab routines -  you need to also play deathmatch and focus on your crosshair placement, play ranked matches, and work on your gamesense. Those things win you games; your raw aim might win you a few fights. Both things are important, and a proper routine has Kovaak’s -> Deathmatch -> Ranked every day. Ideally you should play this routine first, then 1 hour deathmatch to try to replicate in game the movements you practiced in this routine, then ranked where you’re in the “real world” of VALORANT and you try to use your synthetic training to actually win games and climb the leaderboard. If you are really lacking in gamesense, find a coach that is willing to VoD review with you (fastest way to improve) or VoD review yourself, but make sure you really analyze logically each single decision you, your teammates, and your enemies make.
 
 
-Some helpful clicking scenarios for Apex Legends in Kovaaks are CFSEI Thin Shotgun HS, B180 Voltaic, VoxTargetSwitch Click Heads, Popcorn Voltaic Goated, Pasu 360 Reload Goated, B180 Voltaic, 1w2ts Perfected, Pasu Voltaic and 6wall18targetssmall reload. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels.
-
-
-Some helpful tracking scenarios for Apex Legends in Kovaaks are Controlsphere, Close Tappy Strafes, Close Fast Strafes Invincible, PGTI Voltaic, Smoothbot Voltaic, Thin Aiming Long Invincible, Vertical Smoothness Training Popcorn, B360TI Sparky Small Popcorn, FuglaaXYZ Voltaic No Blinks small, Air Angelic 4 Voltaic, Thinbot Plaza Raspberry Invincible v2, raspStrafes 360, RaspStraftesCata Invincible, Reactive Dot Invincible, and Plaza Low Ground Spark 50%HP. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels.
-
-
-Some helpful switching scenarios for Apex Legends in Kovaaks are voxTargetSwitch Smooth, Target Switching 360 Static Extra Thin, xenTargetSwitch, voxTargetSwitch Smooth, kinTS Voltaic mini, Skeet Tracking Goated, Bounce 180 Tracking, and devTargetSwitch no reload. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels.
-
-
-Some helpful hybrid scenarios for Apex Legends in Kovaaks are B180T Voltaic Regen, Apex MLSI Headshot Click, Pasu 360 Reload Goated 2-Click, fuglaab180t, Oblique Tracking Goated, Controlsphere TS, canTS, and Apex CLS Headshot Click. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels.
-
-
-Some helpful movement-clicking scenarios for Apex Legends in Kovaaks are Manwing Strafe Gallery, Pasu Dodge, voxTargetClick Strafe, and Close FS Dodge Manwing Nomag. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels.
-
-
-Some helpful movement-tracking scenarios for Apex Legends in Kovaaks are Revolving Tracking, Close LS Dodge, Pole long dodge extra thin, Revolving Tracking Strafes, Anti-Mirror LS 360 Thin Robsai, Rhombus Dodge, Hyperscape VT Dodge, Pasu Dodge Track Pure, Close Range LG Duel, Stralroom FS Dodge, lgc3 Reborn Varied Thin, Air Dodge, Air Angelic Dodge, and XY Tracking Dodge. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels.
+Some helpful clicking scenarios for Apex Legends in Kovaaks are CFSEI Thin Shotgun HS, B180 Voltaic, VoxTargetSwitch Click Heads, Popcorn Voltaic Goated, Pasu 360 Reload Goated, B180 Voltaic, 1w2ts Perfected, Pasu Voltaic and 6wall18targetssmall reload. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels. Some helpful tracking scenarios for Apex Legends in Kovaaks are Controlsphere, Close Tappy Strafes, Close Fast Strafes Invincible, PGTI Voltaic, Smoothbot Voltaic, Thin Aiming Long Invincible, Vertical Smoothness Training Popcorn, B360TI Sparky Small Popcorn, FuglaaXYZ Voltaic No Blinks small, Air Angelic 4 Voltaic, Thinbot Plaza Raspberry Invincible v2, raspStrafes 360, RaspStraftesCata Invincible, Reactive Dot Invincible, and Plaza Low Ground Spark 50%HP. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels. Some helpful switching scenarios for Apex Legends in Kovaaks are voxTargetSwitch Smooth, Target Switching 360 Static Extra Thin, xenTargetSwitch, voxTargetSwitch Smooth, kinTS Voltaic mini, Skeet Tracking Goated, Bounce 180 Tracking, and devTargetSwitch no reload. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels. Some helpful hybrid scenarios for Apex Legends in Kovaaks are B180T Voltaic Regen, Apex MLSI Headshot Click, Pasu 360 Reload Goated 2-Click, fuglaab180t, Oblique Tracking Goated, Controlsphere TS, canTS, and Apex CLS Headshot Click. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels. Some helpful movement-clicking scenarios for Apex Legends in Kovaaks are Manwing Strafe Gallery, Pasu Dodge, voxTargetClick Strafe, and Close FS Dodge Manwing Nomag. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels. Some helpful movement-tracking scenarios for Apex Legends in Kovaaks are Revolving Tracking, Close LS Dodge, Pole long dodge extra thin, Revolving Tracking Strafes, Anti-Mirror LS 360 Thin Robsai, Rhombus Dodge, Hyperscape VT Dodge, Pasu Dodge Track Pure, Close Range LG Duel, Stralroom FS Dodge, lgc3 Reborn Varied Thin, Air Dodge, Air Angelic Dodge, and XY Tracking Dodge. These scenarios may have different variations that are harder/easier to accommodate players of all skill levels.[ab]
 
 
 An easy Kovaaks routine to help your aim in Apex Legends involves playing these scenarios: Revolving Tracking Slow, B180T Voltaic Regen, Controlsphere 80%, Close Tappy Strafes Easy, Close Fast Strafes Very Easy Invincible, PGTI Voltaic Slower, Thin Aiming Long Invincible, Vertical Smoothness Training Popcorn, Apex MLSI Headshot Click, Pasu 360 Reload Goated 2-Click Easy, B180 Voltaic Easy, voxTargetSwitch Smooth, Close LS Easy Dodge, and Manwing Strafe Gallery Easy V3. This routine is effective practice because it includes scenarios that are very closely related to in-game situations. 
@@ -259,61 +124,257 @@ A Kovaaks routine to help your aim in Apex Legends with a focus on strafe aim in
 A generalized Kovaaks routine to help your aim in Apex Legends involves playing these scenarios: Ground Plaza Sparky v3, B180TI Sparky, Plaza High Ground Sparky, Paza Low Ground Sparky, Apex CLS Headshot Click, Bounce 180 Tracking Sparky, 1wall5targets_pasu reload, CFSE Thin Shotgun HS, Bounce 180 Sparky, Close FS Dodge Manwing Nomag, and XY Tracking Dodge. This Apex routine includes scenarios that are closely related to in-game situations, such as Close Long Strafes Headshot where you need to track a target smoothly and deliberately focus on the head. Ground Plaza Sparky v3 also adds an important element like smooth tracking with fast reacting to blinks and varying movement changes. Both Plaza High and Low ground can be useful if you struggle when you’re angled at a disadvantage or advantage. Basic types of switching scenarios should still be useful for Apex, because you learn to read targets, acquire them and switch quickly then eliminate them efficiently. The clicking scenarios should apply to all the click-type weapons such as the Wingman. Close Fast Strafes Easy Thin Shotgun, is especially useful to make sure to line up your shots effectively. Both the movement type scenarios help players learn to take advantage of their movement to line up their shots better.
 
 
-Health science plays a major role in esports, especially in the intensity of FPS games, which can ask a lot out of us in terms of tension, arm and wrist mobility, and repetitive motion. It is recommended by this app for all wrist health-related issues, injury-prevention measures, and posture recommendations, that users seek out 1HP Health at www.1-hp.org. Tendinopathy in the wrist is the most common injury among FPS esports players, often presenting itself with pain and weakness in or around the wrist. Strengthening and load management are the preferred treatment methods.
+Health science plays a major role in esports, especially in the intensity of FPS games, which can ask a lot out of us in terms of tension, arm and wrist mobility, and repetitive motion. It is recommended by this app for all wrist health-related issues, injury-prevention measures, and posture recommendations, that users seek out 1HP Health at www.1-hp.org. Tendinopathy in the wrist is the most common injury among FPS esports players, often presenting itself with pain and weakness in or around the wrist. Strengthening and load management are the preferred treatment methods. Endurance strengthening may take the form of doing simple wrist flexor weight-lifting with dumbbells. Try to see your wrist endurance as an HP bar, where heavier loads, or intense gaming sessions, can cause your HP to decrease. The key approach is to try and increase the size of your HP bar, thus allowing you to play for longer periods of time. In this sense, basic stretching exercises may not be enough on their own to alleviate symptoms of weakness or pain. You must directly work on strengthening the muscles and tendons in your hand. It will take time to build up muscle strength. On average, it may take 4-6 weeks of consistent work to make a change in tissue strength. Improvements in neuromuscular efficiency may make you feel stronger, but tissue adaptation takes longer. It is reasonable to expect some pain flare-ups during your exercise periods. Also understand that everyone’s pain is different, and some people may have an increased tolerance for pain during gaming or other activities. Healing durations also vary person per person. Nonetheless, pain that is sharp or concerning should be an indicator of something that needs work. Famous aim trainers like Madbadman and AoD have played through periods of pain, and it has led them to take extended hiatuses away from play. It may have also shortened their esports careers, having exacerbated the issues that they were feeling initially. Do not risk it. If you feel pain that is around 3-5/10 in severity at minimum, get it checked out. 1HP Health specializes in health science centered around esports players. They have many resources and work entirely remote, meaning you can receive premium healthcare in the comfort of your home. [ac]
 
 
-Endurance strengthening may take the form of doing simple wrist flexor weight-lifting with dumbbells. Try to see your wrist endurance as an HP bar, where heavier loads, or intense gaming sessions, can cause your HP to decrease. The key approach is to try and increase the size of your HP bar, thus allowing you to play for longer periods of time. In this sense, basic stretching exercises may not be enough on their own to alleviate symptoms of weakness or pain. You must directly work on strengthening the muscles and tendons in your hand.
+What sensitivity is the best? What sensitivity is most optimal? How do you find your sensitivity? The best sensitivity depends on the game you're playing. Think of sensitivity as a tool: higher sensitivities are better for wider, faster movements (like in Overwatch), while lower sensitivities are better for smaller, precise movements (like in Valorant). Changing sensitivity won't hurt your aim, and it's actually beneficial to adjust it based on the specific game's requirements.[ad]
 
 
-It will take time to build up muscle strength. On average, it may take 4-6 weeks of consistent work to make a change in tissue strength. Improvements in neuromuscular efficiency may make you feel stronger, but tissue adaptation takes longer. It is reasonable to expect some pain flare-ups during your exercise periods. Also understand that everyone’s pain is different, and some people may have an increased tolerance for pain during gaming or other activities. Healing durations also vary person per person. Nonetheless, pain that is sharp or concerning should be an indicator of something that needs work. 
+What is the best FOV? What FOV should I be using? Is there an optimal FOV? The best FOV isn't one-size-fits-all. Higher FOV lets you see more peripherally, while lower FOV makes central targets appear larger. Consider relative speed: targets seem faster at lower FOVs. Higher FOV can help with tracking fast targets and wider angles, but might make them harder to hit. Lower FOV is often better for precision. Choose based on the game's demands and your individual preferences.[ae]
 
 
-Famous aim trainers like Madbadman and AoD have played through periods of pain, and it has led them to take extended hiatuses away from play. It may have also shortened their esports careers, having exacerbated the issues that they were feeling initially. Do not risk it. If you feel pain that is around 3-5/10 in severity at minimum, get it checked out. 1HP Health specializes in health science centered around esports players. They have many resources and work entirely remote, meaning you can receive premium healthcare in the comfort of your home. 
-
-
-What sensitivity is the best? What sensitivity is most optimal? How do you find your sensitivity? The best sensitivity depends on the game you're playing. Think of sensitivity as a tool: higher sensitivities are better for wider, faster movements (like in Overwatch), while lower sensitivities are better for smaller, precise movements (like in Valorant). Changing sensitivity won't hurt your aim, and it's actually beneficial to adjust it based on the specific game's requirements.
-
-
-What is the best FOV? What FOV should I be using? Is there an optimal FOV? The best FOV isn't one-size-fits-all. Higher FOV lets you see more peripherally, while lower FOV makes central targets appear larger. Consider relative speed: targets seem faster at lower FOVs. Higher FOV can help with tracking fast targets and wider angles, but might make them harder to hit. Lower FOV is often better for precision. Choose based on the game's demands and your individual preferences.
-
-
-Where should I be focusing? My crosshair or the bot? Do you look at the crosshair or at the target when aiming? Should you look at the crosshair when aiming? Focus on your target, not the crosshair. Your target moves unpredictably, so focusing on them allows you to react better. You already know how your crosshair will move. Focusing on the target also helps you read their movements and anticipate their actions. The only exception is with slow, small targets at long range, where checking your crosshair placement might be necessary.
+Where should I be focusing? My crosshair or the bot? Do you look at the crosshair or at the target when aiming? Should you look at the crosshair when aiming? Focus on your target, not the crosshair. Your target moves unpredictably, so focusing on them allows you to react better. You already know how your crosshair will move. Focusing on the target also helps you read their movements and anticipate their actions. The only exception is with slow, small targets at long range, where checking your crosshair placement might be necessary.[af]
 
 
 What’s the difference between warmup and practice? Should I use aim training as a warmup or practice? Warmup gets you ready for immediate play. It's about getting your arm moving and feeling focused. Practice, on the other hand, is about long-term improvement. You might not see the benefits of an hour of aim training immediately, but consistent practice over time will lead to significant improvement. Warmup helps you reach your current skill ceiling, while practice raises that ceiling.
 
 
-Should I be using my wrist or arm to aim? Is it better to be an arm aimer or wrist aimer? Use both arm and wrist aiming. Do not restrict yourself to one or the other. Your arm is better for wider, faster movements, while your wrist excels at smaller, precise movements. Combining both gives you flexibility and allows you to utilize the strengths of each. The exact balance depends on your sensitivity, but using both is generally beneficial.
+Should I be using my wrist or arm to aim? Is it better to be an arm aimer or wrist aimer? Use both arm and wrist aiming. Do not restrict yourself to one or the other. Your arm is better for wider, faster movements, while your wrist excels at smaller, precise movements. Combining both gives you flexibility and allows you to utilize the strengths of each. The exact balance depends on your sensitivity, but using both is generally beneficial.[ag]
 
 
-Does hardware matter? Does setup matter? How much do good peripherals make a difference? Yes, hardware like high refresh rate monitors and good frame rates matter, but they won't make you a better aimer. They allow your in-game performance to more accurately reflect your skill level. While you can still perform well with lower specs, upgrading to at least a 144hz monitor and maintaining 144fps is recommended if you're serious about competitive FPS gaming. Good hardware will not make you a better aimer, but it can make it easier for you to become a better aimer.
+Does hardware matter? Does setup matter? How much do good peripherals make a difference? Yes, hardware like high refresh rate monitors and good frame rates matter, but they won't make you a better aimer. They allow your in-game performance to more accurately reflect your skill level. While you can still perform well with lower specs, upgrading to at least a 144hz monitor and maintaining 144fps is recommended if you're serious about competitive FPS gaming. Good hardware will not make you a better aimer, but it can make it easier for you to become a better aimer.[ah]
 
 
-Should I use mouse accel? Is Raw Accel good? Mouse acceleration, while promising benefits like faster flicks and controlled tracking, can hinder long-term improvement. A prominent aimer, Viscose initially experienced success with accel, but later discovered it limited her micro-adjustments and masked underlying mechanical issues. This was especially noticeable in games requiring quick, precise movements. Her performance improved significantly after switching to a static sensitivity and focusing on targeted practice.
+Should I use mouse accel? Is Raw Accel good? Mouse acceleration, while promising benefits like faster flicks and controlled tracking, can hinder long-term improvement. A prominent aimer, Viscose initially experienced success with accel, but later discovered it limited her micro-adjustments and masked underlying mechanical issues. This was especially noticeable in games requiring quick, precise movements. Her performance improved significantly after switching to a static sensitivity and focusing on targeted practice. Accel's appeal lies in its ability to offer a seemingly intuitive experience, especially for newer players. It can help bridge the gap between low and high sensitivities, making adjustments easier. However, its "quick fix" nature can be deceptive, as it covers up weaknesses rather than addressing them directly. For those seeking genuine improvement, dedicated practice and focused training are more effective than relying on accel's perceived benefits. While Viscose ultimately abandoned mouse acceleration, she acknowledges its initial positive impact. It motivated them to actively work on her aim and provided a stepping stone towards a more conscious approach to skill development. However, this application’s author emphasizes the importance of understanding accel's limitations and approaching it with realistic expectations. True mastery in aiming comes from consistent practice and addressing underlying mechanical flaws, rather than seeking shortcuts.[ai]
 
 
-Accel's appeal lies in its ability to offer a seemingly intuitive experience, especially for newer players. It can help bridge the gap between low and high sensitivities, making adjustments easier. However, its "quick fix" nature can be deceptive, as it covers up weaknesses rather than addressing them directly. For those seeking genuine improvement, dedicated practice and focused training are more effective than relying on accel's perceived benefits.
+Is there a perfect mouse grip? What is the best grip? How do I grip my mouse? The "perfect" grip is subjective and depends on individual preferences, hand size, sensitivity, and the specific game being played. The author discusses three primary grip styles: palm, fingertip, and claw, each with its own advantages and drawbacks. While palm grip offers stability, it can limit finger mobility; fingertip grip provides greater precision but sacrifices stability; and claw grip strikes a balance between the two. The author highlights the importance of adaptability and comfort, suggesting that grip styles can naturally evolve based on in-game actions and individual needs. Viscose has discussed her personal journey of transitioning from palm to fingertip grip, ultimately settling on a claw grip that allows for both stability and precision. She emphasizes that forcing a particular grip style can be detrimental and that finding a comfortable, natural hold is crucial. It is advised against overthinking grip style as a silver bullet for improvement. Working on weaknesses and techniques are far more crucial for aim development.[aj]
 
 
-While Viscose ultimately abandoned mouse acceleration, she acknowledges its initial positive impact. It motivated them to actively work on her aim and provided a stepping stone towards a more conscious approach to skill development. However, this application’s author emphasizes the importance of understanding accel's limitations and approaching it with realistic expectations. True mastery in aiming comes from consistent practice and addressing underlying mechanical flaws, rather than seeking shortcuts.
+How long should I be training? How much training do I need to see results? Your split between in-game practice and aim training should be something close to 70-30 respectively. This means 70% of your gaming time should be spent trying to improve at your main game, and 30% be spent on practicing your fundamentals in the aim trainer. This is a rough metric, and you can vary the time you spend depending on what your goals are or what you are valuing the most. Some players’ main game IS the aim trainer.[ak]
 
 
-Is there a perfect mouse grip? What is the best grip? How do I grip my mouse? The "perfect" grip is subjective and depends on individual preferences, hand size, sensitivity, and the specific game being played. The author discusses three primary grip styles: palm, fingertip, and claw, each with its own advantages and drawbacks. While palm grip offers stability, it can limit finger mobility; fingertip grip provides greater precision but sacrifices stability; and claw grip strikes a balance between the two.
+Why am I not seeing results from aim training? Why is my aim still bad after aim training? There are two major reasons as for why aim training may not be delivering the results you want in-game. The first reason may be simply that you are not playing the right scenarios for your main game. You should not be playing super fast, erratic reactive tracking for a slow-paced clicking game like VALORANT. The second reason may be a mindset issue. Aim training leads to subtle improvement, that is not always consistent or linear.[al]
 
 
-The author highlights the importance of adaptability and comfort, suggesting that grip styles can naturally evolve based on in-game actions and individual needs. Viscose has discussed her personal journey of transitioning from palm to fingertip grip, ultimately settling on a claw grip that allows for both stability and precision. She emphasizes that forcing a particular grip style can be detrimental and that finding a comfortable, natural hold is crucial. It is advised against overthinking grip style as a silver bullet for improvement. Working on weaknesses and techniques are far more crucial for aim development.
+Are routines good? Should I be using a routine? Are routines helpful? Aim training routines can provide you structured practice, which can help you to maintain consistency on a strict set of aiming scenarios. Routines also help you to appropriately set the maximum amount of time you need to spend on aim trainers. However, they might not be useful if you want to be more carefree with your training or branch out to different scenarios. Routines can also prove to be rather boring or too restrictive at times. [am]
 
 
-How long should I be training? How much training do I need to see results? Your split between in-game practice and aim training should be something close to 70-30 respectively. This means 70% of your gaming time should be spent trying to improve at your main game, and 30% be spent on practicing your fundamentals in the aim trainer. This is a rough metric, and you can vary the time you spend depending on what your goals are or what you are valuing the most. Some players’ main game IS the aim trainer.
+How do you overcome plateaus? How to stop plateauing? How do you get out of a plateau? Plateauing in aim training or in any field refers to when your progress or improvement levels out, such that you feel you are hitting a ceiling or a brick wall and are not improving any further. The key to getting out of a plateau is to change something up. Play something different. Try new or more challenging scenarios. Doing so will help your brain to learn new patterns and experiences, eventually leading to new pathways of improvement. [an]
 
 
-Why am I not seeing results from aim training? Why is my aim still bad after aim training? There are two major reasons as for why aim training may not be delivering the results you want in-game. The first reason may be simply that you are not playing the right scenarios for your main game. You should not be playing super fast, erratic reactive tracking for a slow-paced clicking game like VALORANT. The second reason may be a mindset issue. Aim training leads to subtle improvement, that is not always consistent or linear.
+Do genetics matter? Does talent matter? Does talent make you a good aimer? Is genetics important? The author of this app emphasizes that talent and genetics play a minor role in becoming a great esports player. Genetics on its own cannot make you better. You must cultivate talent and work hard to allow it to show through in terms of performance. In aiming, genetics affects two things– reaction time and tissue strength (longevity). While both of these factors are important, they alone will not determine your success as an aimer.[ao]
 
 
-Are routines good? Should I be using a routine? Are routines helpful? Aim training routines can provide you structured practice, which can help you to maintain consistency on a strict set of aiming scenarios. Routines also help you to appropriately set the maximum amount of time you need to spend on aim trainers. However, they might not be useful if you want to be more carefree with your training or branch out to different scenarios. Routines can also prove to be rather boring or too restrictive at times. 
 
 
-How do you overcome plateaus? How to stop plateauing? How do you get out of a plateau? Plateauing in aim training or in any field refers to when your progress or improvement levels out, such that you feel you are hitting a ceiling or a brick wall and are not improving any further. The key to getting out of a plateau is to change something up. Play something different. Try new or more challenging scenarios. Doing so will help your brain to learn new patterns and experiences, eventually leading to new pathways of improvement. 
-
-
-Do genetics matter? Does talent matter? Does talent make you a good aimer? Is genetics important? The author of this app emphasizes that talent and genetics play a minor role in becoming a great esports player. Genetics on its own cannot make you better. You must cultivate talent and work hard to allow it to show through in terms of performance. In aiming, genetics affects two things– reaction time and tissue strength (longevity). While both of these factors are important, they alone will not determine your success as an aimer.
+[a]effective split
+substitute
+in-game practice
+what is aim training
+how long should you spend aim training
+[b]why play aim trainers
+advantages of aim trainers
+purpose of aim training
+isolation
+isolated practice
+[c]which trainer do I choose
+Aimbeast
+which software is best
+[d]setup
+144hz
+240hz
+360hz
+gear
+[e]what sensitivity
+ideal sensitivity
+sens range
+what sens do I use
+[f]muscle memory
+what is muscle memory
+changing sens 
+changing sens is bad
+neuroscience
+motor memory
+[g]what are good visuals
+aim trainer themes
+visual theme
+[h]aim theory
+aim categories
+[i]static
+static clicking
+stationary target
+static target
+static flick
+bardoz
+bardoz method
+fluidity
+cluster farming
+foundation
+micro correction
+initial flick
+1w4ts
+1w6ts
+ww3t
+[j]dynamic
+dynamic clicking
+pasu
+angleshot
+shot timing
+how to fix shot spamming
+multi-target
+roadmapping
+peripheral awareness
+arc dynamic
+bounceshot
+b180
+popcorn
+[k]tracking
+what is tracking
+how to play tracking
+smooth tracking
+precise tracking
+how to reduce shakiness
+how to fix shaky aim
+smoothbot
+pgti
+reactive tracking
+how to play reactive tracking
+edge tracking
+air
+ground plaza
+fuglaa
+control tracking
+whisphere
+reaction smoothness
+tension management
+[l]target switching
+how to play switching
+voxts
+psalmts
+direct flicks
+target prioritization
+pokeball
+flick accuracy
+flick landings
+how do i practice fast flicks
+flicking technique
+speed ts
+evasive ts
+speed switching
+evasive switching
+[m]strafe aim
+mirroring
+anti-mirroring
+how to move and aim
+how to dodge and aim
+[n]voltaic overwatch
+overwatch clicking
+overwatch dynamic
+soldier 76
+cassidy
+[o]multi-click
+overwatch click
+ashe
+widowmaker
+strafeshot
+what are good scenarios for clicking in ow
+[p]overwatch tracking
+ow tracking
+soldier 76 tracking
+what scenarios are good for soldier
+what tracking scenarios are good for overwatch
+pure reactive
+instant acceleration
+[q]how to get smooth aim on soldier
+[r]overwatch switching
+ow switching scenarios
+hitscan
+[s]useful scenarios for overwatch
+good scenarios for ow
+what to play for ow
+what do I play for overwatch
+[t]scenarios for soldier 76
+[u]scenarios for cassidy
+[v]scenarios for Sojourn
+[w]scenarios for widow
+scenarios for widowmaker
+[x]scenarios for ashe
+[y]scenarios for tracer
+tracer
+[z]valorant
+what routines for valorant
+good routines for valorant
+[aa]valorant clicking
+valorant switching
+valorant tracking
+how to get better aim in valorant
+valorant routine
+valorant warmup
+[ab]apex legends
+apex
+aim in apex
+apex aim
+apex routines
+what routines are for apex
+what scenarios for apex
+apex scenarios
+[ac]wrist health
+injury
+health science
+health
+symptoms
+pain
+weakness
+tendon
+tendinopathy
+prevention
+1hp
+1hp health
+endurance
+strengthening
+how do I exercise my wrist
+why does my wrist hurt
+[ad]what sensitivity is best
+what sensitivity is most optimal
+how do you find your sensitivity
+[ae]what is the best fov
+what fov should I be using
+is there an optimal fov
+[af]where should I be focusing
+my crosshair or the bot
+look at the crosshair or at the target
+[ag]should i use my wrist or arm
+wrist or arm to aim
+arm aimer or wrist aimer
+[ah]does hardware matter
+does setup matter
+do good peripherals make a difference
+[ai]mouse accel
+raw accel
+should i use raw accel
+viscose
+[aj]perfect mouse grip
+what is the best grip
+how do i grip my mouse
+claw
+palm
+fingertip
+[ak]how long should i be training
+how much training do i need to see the results
+[al]why am i not seeing results from aim training
+why is my aim still bad
+[am]are routines good
+should i use routines
+should i be on a routine
+are routines helpful
+[an]plateau
+how to overcome plateaus
+how to stop plateauing
+how do you get out of a plateau
+[ao]do genetics matter
+talent 
+genetics
+does talent make you a good aimer
+is genetics important
+impact of genetics

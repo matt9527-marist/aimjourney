@@ -27,23 +27,114 @@ with open('context/chunk_keywords.json', 'r', encoding='utf-8') as f:
 
 # List of specific keywords to ensure inclusion. If found in prompt, will significantly influence which chunk is chosen.
 #* These keywords are highly specific and chosen deliberately to push prompts containing them to top priority
-specific_keywords = ['tension', 'wrist', 'micro', 'pressure', 'flick', 'tense', 'hurts', 'pain', 'Overwatch', 'OW', 'OW2', 'VALORANT', 'val',
+specific_keywords = ['tension', 'micro', 'pressure', 'flick', 'tense', 'hurts', 'pain', 'Overwatch', 'OW', 'OW2', 'VALORANT', 'val',
                      'cs', 'Counter Strike', 'csgo', 'rainbow six', 'r6', 'cod', 'Call of Duty', 'apex', 'Apex Legends', 'dynamic',
                      'precise tracking', 'reactive tracking', 'switching', 'target switching', 'speed', 'evasive', 'stability', 'stable', 'static click',
                      'static', 'Bardoz', 'fluidity', 'target priority', 'crosshair placement', 'smoothness', 'smoothly', 'wrist aim', 'arm aim',
-                     'fingertip aim', 'micro adjustment', 'shot confirmation']
+                     'fingertip aim', 'micro adjustment', 'shot confirmation', 'effective split', 'substitute', 'isolation', 
+                     'isolated practice', '144hz', '240hz', '360hz', 'ideal sensitivty', 'what sensitivity', 'sens range',
+                     'muscle memory', 'changing sens', 'neuroscience', 'motor memory', 'good visuals', 'aim trainer themes',
+                     'themes', 'visuals', 'aim theory', 'aim categories', 'static', 'static clicking', 'stationary target', 'static target',
+                     'static flick', 'bardoz', 'bardoz method', 'fluidity', 'cluster farming', 'foundation', 'micro correction', 'initial flick', '1w4ts', '1w6ts', 'ww3t',
+                     'dynamic', 'dynamic clicking', 'pasu', 'angleshot', 'shot timing', 'multi-target', 'roadmapping', 'peripheral awareness', 'arc dynamic', 
+                     'bounceshot', 'b180', 'popcorn', 'tracking', 'smooth tracking', 'precise tracking', 'smoothbot', 'pgti', 'reactive tracking', 'edge tracking', 
+                     'air', 'ground plaza', 'fuglaa', 'control tracking', 'whisphere', 'reaction smoothness', 'tension management', 
+                     'target switching', 'voxts', 'psalmts', 'direct flicks', 'target prioritization', 'pokeball', 'flick accuracy', 'flick landings', 
+                     'flicking technique', 'speed ts', 'evasive ts', 'speed switching', 'evasive switching', 'strafe aim', 'mirroring', 'anti-mirroring',
+                     'voltaic overwatch', 'overwatch clicking', 'overwatch dynamic', 'soldier 76', 'cassidy', 'multi-click', 'overwatch click', 'ashe', 'widowmaker', 'strafeshot',
+                     'overwatch tracking', 'ow tracking', 'soldier 76 tracking', 'pure reactive', 'instant acceleration', 'overwatch switching', 'ow switching scenarios', 'hitscan', 'tracer',
+                     'valorant', 'valorant clicking', 'valorant switching', 'valorant tracking', 'valorant routine', 'valorant warmup',
+                     'cs scenarios', 'counter strike', 'cs2', 'csgo', 'apex legends', 'apex', 'aim in apex', 'apex aim', 'apex routines', 'apex scenarios',
+                     'wrist health', 'injury', 'injuries', 'health science', 'health', 'symptoms', 'pain', 'weakness', 'tendon', 'tendinopathy', 'prevention', '1hp', '1hp health', 'endurance', 'strengthening',
+                     'plateau', 'plateauing']
 
 # List of vague keywords to reduce scoring impact
 #* These keywords are too vague and sparse across the data context to provide any good influence on the prompt
-vague_keywords = ['aim', 'aiming', 'improve', 'improvement', 'practice', 'skill', 'train', 'trainer', 'training']
+vague_keywords = ['aim', 'aiming', 'improve', 'improvement', 'practice', 'skill', 'train', 'trainer', 'training', 'esport', 'game'
+                  'shooter', 'FPS', 'improving', 'Voltaic', 'VT']
 
 # List of common keywords to slightly skew scoring impact positively.
 #* These keywords will add a slight positive bias to the chunk weight, applied for terms included in frequently asked questions
-common_keywords = ['monitor', 'mouse', 'sleeve', 'keyboard', 'shaky', 'shakiness', 'shaking', 'smooth aim', 'calm aim']
+common_keywords = ['monitor', 'mouse', 'sleeve', 'keyboard', 'shaky', 'shakiness', 'shaking', 'smooth aim', 'calm aim', 'aimbeast',
+                   'setup', 'gear', 'grip', 'sens', 'ow', 'crosshair', 'pattern', 'learn', 'experiment', 'mouse accel', 'raw accel',
+                   'viscose', 'matty', 'cartoon', 'minigod', 'mouse grip', 'claw', 'palm', 'fingertip', 'talent', 'genetics']
 
 # List of phrases or frequently asked questions that can be used to very quickly identify what the user wants
 #* These keywords will add a very heavy bias to the chunk weight, basically guaranteeing the choice.
-faq_strings = ['How do you play static', 'scenarios for Overwatch', 'What is Voltaic']
+faq_strings = [
+    "What is the best sensitivity for aiming",
+    "How do I aim faster in games",
+    "What is aim training",
+    "How long should you spend aim training",
+    "Why play aim trainers",
+    "which software is best",
+    "which trainer do I use",
+    "which trainer do I choose",
+    "what sens do I run",
+    "What is muscle memory",
+    "how to fix shot spamming",
+    "how to play tracking",
+    "how to reduce shakiness",
+    "how to fix shaky aim",
+    "how to play reactive tracking",
+    "what is tracking",
+    "how to play switching",
+    "how do i practice fast flicks",
+    "how to move and aim",
+    "how to dodge and aim",
+    "what are good scenarios for clicking in ow",
+    "what scenarios are good for soldier",
+    "what tracking scenarios are good for overwatch",
+    "how to get smooth aim on soldier",
+    "what to play for ow",
+    "what do I play for overwatch",
+    "scenarios for soldier 76",
+    "scenarios for cassidy",
+    "scenarios for Sojourn",
+    "scenarios for widow",
+    "scenarios for widowmaker",
+    "scenarios for ashe",
+    "scenarios for tracer",
+    "what routines for valorant",
+    "good routines for valorant",
+    "how to get better aim in valorant",
+    "what routines are for apex",
+    "what scenarios for apex",
+    "how do I exercise my wrist",
+    "why does my wrist hurt",
+    "what sensitivity is best",
+    "what sensitivity is most optimal",
+    "how do you find your sensitivity",
+    "what is the best fov",
+    "what fov should I be using",
+    "is there an optimal fov",
+    "where should I be focusing",
+    "my crosshair or the bot",
+    "look at the crosshair or at the target",
+    "should i use my wrist or arm",
+    "wrist or arm to aim",
+    "arm aimer or wrist aimer",
+    "does hardware matter",
+    "does setup matter",
+    "do good peripherals make a difference",
+    "how do i grip my mouse",
+    "perfect mouse grip",
+    "what is the best grip",
+    "how long should i be training",
+    "how much training do i need to see the results",
+    "why am i not seeing results from aim training",
+    "why is my aim still bad",
+    "are routines good",
+    "should i use routines",
+    "should i be on a routine",
+    "are routines helpful",
+    "how to overcome plateaus",
+    "how to stop plateauing",
+    "how do you get out of a plateau",
+    "do genetics matter",
+    "does talent make you a good aimer",
+    "is genetics important"
+]
 
 def extract_keywords(prompt):
     # Process the user prompt with SpaCy
