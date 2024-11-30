@@ -27,12 +27,12 @@ with open('context/chunk_keywords.json', 'r', encoding='utf-8') as f:
 
 # List of specific keywords to ensure inclusion. If found in prompt, will significantly influence which chunk is chosen.
 #* These keywords are highly specific and chosen deliberately to push prompts containing them to top priority
-specific_keywords = ['tension', 'micro', 'pressure', 'flick', 'tense', 'hurts', 'pain', 'Overwatch', 'OW', 'OW2', 'VALORANT', 'val',
-                     'cs', 'Counter Strike', 'csgo', 'rainbow six', 'r6', 'cod', 'Call of Duty', 'apex', 'Apex Legends', 'dynamic',
+specific_keywords = ['tension', 'micro', 'pressure', 'flick', 'tense', 'hurts', 'pain',
+                     'cs', 'Counter Strike', 'csgo', 'rainbow six', 'r6', 'cod', 'call of duty', 'apex', 'Apex Legends', 'dynamic',
                      'precise tracking', 'reactive tracking', 'switching', 'target switching', 'speed', 'evasive', 'stability', 'stable', 'static click',
-                     'static', 'Bardoz', 'fluidity', 'target priority', 'crosshair placement', 'smoothness', 'smoothly', 'wrist aim', 'arm aim',
+                     'static', 'bardoz', 'fluidity', 'target priority', 'crosshair placement', 'smoothness', 'smoothly', 'wrist aim', 'arm aim',
                      'fingertip aim', 'micro adjustment', 'shot confirmation', 'effective split', 'substitute', 'isolation', 
-                     'isolated practice', '144hz', '240hz', '360hz', 'ideal sensitivty', 'what sensitivity', 'sens range',
+                     'isolated practice', '144hz', '240hz', '360hz', 'ideal sensitivty', 'what sensitivity', 'sens range', 'misnomer',
                      'muscle memory', 'changing sens', 'neuroscience', 'motor memory', 'good visuals', 'aim trainer themes',
                      'themes', 'visuals', 'aim theory', 'aim categories', 'static', 'static clicking', 'stationary target', 'static target',
                      'static flick', 'bardoz', 'bardoz method', 'fluidity', 'cluster farming', 'foundation', 'micro correction', 'initial flick', '1w4ts', '1w6ts', 'ww3t',
@@ -46,18 +46,38 @@ specific_keywords = ['tension', 'micro', 'pressure', 'flick', 'tense', 'hurts', 
                      'valorant', 'valorant clicking', 'valorant switching', 'valorant tracking', 'valorant routine', 'valorant warmup',
                      'cs scenarios', 'counter strike', 'cs2', 'csgo', 'apex legends', 'apex', 'aim in apex', 'apex aim', 'apex routines', 'apex scenarios',
                      'wrist health', 'injury', 'injuries', 'health science', 'health', 'symptoms', 'pain', 'weakness', 'tendon', 'tendinopathy', 'prevention', '1hp', '1hp health', 'endurance', 'strengthening',
-                     'plateau', 'plateauing']
+                     'plateau', 'plateauing', 'Tension', 'Micro', 'Pressure', 'Flick', 'Tense', 'Hurts', 'Pain', 'VALORANT', 'Val',
+                     'Cs', 'Counter Strike', 'Csgo', 'Rainbow Six', 'R6', 'Cod', 'Call of Duty', 'Apex', 'Apex Legends', 'Dynamic',
+                     'Precise Tracking', 'Reactive Tracking', 'Switching', 'Target Switching', 'Speed', 'Evasive', 'Stability', 'Stable', 'Static Click',
+                     'Static', 'Bardoz', 'Fluidity', 'Target Priority', 'Crosshair Placement', 'Smoothness', 'Smoothly', 'Wrist Aim', 'Arm Aim',
+                     'Fingertip Aim', 'Micro Adjustment', 'Shot Confirmation', 'Effective Split', 'Substitute', 'Isolation',
+                     'Isolated Practice', '144Hz', '240Hz', '360Hz', 'Ideal Sensitivity', 'What Sensitivity', 'Sens Range',
+                     'Muscle Memory', 'Changing Sens', 'Neuroscience', 'Motor Memory', 'Good Visuals', 'Aim Trainer Themes',
+                     'Themes', 'Visuals', 'Aim Theory', 'Aim Categories', 'Static', 'Static Clicking', 'Stationary Target', 'Static Target',
+                     'Static Flick', 'Bardoz', 'Bardoz Method', 'Fluidity', 'Cluster Farming', 'Foundation', 'Micro Correction', 'Initial Flick', '1W4Ts', '1W6Ts', 'WW3T',
+                     'Dynamic', 'Dynamic Clicking', 'Pasu', 'Angleshot', 'Shot Timing', 'Multi-Target', 'Roadmapping', 'Peripheral Awareness', 'Arc Dynamic',
+                     'Bounceshot', 'B180', 'Popcorn', 'Tracking', 'Smooth Tracking', 'Precise Tracking', 'Smoothbot', 'PGTI', 'Reactive Tracking', 'Edge Tracking',
+                     'Air', 'Ground Plaza', 'Fuglaa', 'Control Tracking', 'Whisphere', 'Reaction Smoothness', 'Tension Management',
+                     'Target Switching', 'Voxts', 'Psalmts', 'Direct Flicks', 'Target Prioritization', 'Pokeball', 'Flick Accuracy', 'Flick Landings',
+                     'Flicking Technique', 'Speed TS', 'Evasive TS', 'Speed Switching', 'Evasive Switching', 'Strafe Aim', 'Mirroring', 'Anti-Mirroring',
+                     'Voltaic Overwatch', 'Overwatch Clicking', 'Overwatch Dynamic', 'Soldier 76', 'Cassidy', 'Multi-Click', 'Overwatch Click', 'Ashe', 'Widowmaker', 'Strafeshot',
+                     'Overwatch Tracking', 'OW Tracking', 'Soldier 76 Tracking', 'Pure Reactive', 'Instant Acceleration', 'Overwatch Switching', 'OW Switching Scenarios', 'Hitscan', 'Tracer',
+                     'Valorant', 'Valorant Clicking', 'Valorant Switching', 'Valorant Tracking', 'Valorant Routine', 'Valorant Warmup',
+                     'CS Scenarios', 'Counter Strike', 'CS2', 'CSGO', 'Apex Legends', 'Apex', 'Aim in Apex', 'Apex Aim', 'Apex Routines', 'Apex Scenarios',
+                     'Wrist Health', 'Injury', 'Injuries', 'Health Science', 'Health', 'Symptoms', 'Pain', 'Weakness', 'Tendon', 'Tendinopathy', 'Prevention', '1HP', '1HP Health', 'Endurance', 'Strengthening',
+                     'Plateau', 'Plateauing']
 
 # List of vague keywords to reduce scoring impact
 #* These keywords are too vague and sparse across the data context to provide any good influence on the prompt
 vague_keywords = ['aim', 'aiming', 'improve', 'improvement', 'practice', 'skill', 'train', 'trainer', 'training', 'esport', 'game'
-                  'shooter', 'FPS', 'improving', 'Voltaic', 'VT']
+                  'shooter', 'FPS', 'improving', 'Voltaic', 'VT', 'play', 'playing', 'scenarios', 'maps']
 
 # List of common keywords to slightly skew scoring impact positively.
 #* These keywords will add a slight positive bias to the chunk weight, applied for terms included in frequently asked questions
 common_keywords = ['monitor', 'mouse', 'sleeve', 'keyboard', 'shaky', 'shakiness', 'shaking', 'smooth aim', 'calm aim', 'aimbeast',
                    'setup', 'gear', 'grip', 'sens', 'ow', 'crosshair', 'pattern', 'learn', 'experiment', 'mouse accel', 'raw accel',
-                   'viscose', 'matty', 'cartoon', 'minigod', 'mouse grip', 'claw', 'palm', 'fingertip', 'talent', 'genetics']
+                   'viscose', 'matty', 'cartoon', 'minigod', 'mouse grip', 'claw', 'palm', 'fingertip', 'talent', 'genetics',
+                   'Overwatch', 'OW', 'OW2',]
 
 # List of phrases or frequently asked questions that can be used to very quickly identify what the user wants
 #* These keywords will add a very heavy bias to the chunk weight, basically guaranteeing the choice.
@@ -82,11 +102,17 @@ faq_strings = [
     "how do i practice fast flicks",
     "how to move and aim",
     "how to dodge and aim",
-    "what are good scenarios for clicking in ow",
+    "what are good scenarios for clicking",
     "what scenarios are good for soldier",
     "what tracking scenarios are good for overwatch",
     "how to get smooth aim on soldier",
     "what to play for ow",
+    "what do I play for overwatch",
+    "what are good scenarios for clicking in OW",
+    "what scenarios are good for Soldier",
+    "what tracking scenarios are good for Overwatch",
+    "how to get smooth aim on Soldier",
+    "what to play for OW",
     "what do I play for overwatch",
     "scenarios for soldier 76",
     "scenarios for cassidy",
@@ -95,8 +121,19 @@ faq_strings = [
     "scenarios for widowmaker",
     "scenarios for ashe",
     "scenarios for tracer",
+    "scenarios for Soldier 76",
+    "scenarios for Cassidy",
+    "scenarios for Sojourn",
+    "scenarios for Widow",
+    "scenarios for Widowmaker",
+    "scenarios for Ashe",
+    "scenarios for Tracer",
     "what routines for valorant",
     "good routines for valorant",
+    "what routines for VALORANT",
+    "good routines for VALORANT",
+    "what routines for Valorant",
+    "good routines for Valorant",
     "how to get better aim in valorant",
     "what routines are for apex",
     "what scenarios for apex",

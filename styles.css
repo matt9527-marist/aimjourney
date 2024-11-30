@@ -64,6 +64,10 @@ body {
     border: 2px solid rgba(238, 74, 243, 1); /* Add a distinct border */
     border-radius: 10px; /* Optional: add rounded corners */
     background-color: rgba(20, 11, 36, 1); /* Match the background color */
+    margin-top: 20px;
+    max-height: calc(100vh - 150px); /* Adjust based on header and input box heights */
+    overflow-y: auto; /* Enable vertical scrolling */
+    box-sizing: border-box; /* Ensure padding doesn't add to the height */
 }
 
 /* For webkit browsers (Chrome, Safari) */

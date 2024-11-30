@@ -80,7 +80,12 @@
         "substitute",
         "in-game practice",
         "what is aim training",
-        "how long should you spend aim training"
+        "how long should you spend aim training",
+        "effective split",
+        "substitute",
+        "in-game practice",
+        "what is aim training",
+        "How long should you spend aim training"
     ],
     "chunk_2": [
         "improve",
@@ -262,7 +267,11 @@
         "what sensitivity",
         "ideal sensitivity",
         "sens range",
-        "what sens do I run"
+        "what sens do I run",
+        "optimal sensitivity",
+        "ideal sensitivity",
+        "sens range",
+        "sens do I run"
     ],
     "chunk_7": [
         "probably",
@@ -367,11 +376,11 @@
         "VT",
         "muscle memory",
         "what is muscle memory",
+        "What is muscle memory",
         "changing sens",
         "changing sens is bad",
         "neuroscience",
         "motor memory"
-
     ],
     "chunk_9": [
         "visual",
@@ -563,6 +572,8 @@
         "static flick",
         "bardoz",
         "bardoz method",
+        "Bardoz",
+        "Bardoz method",
         "fluidity",
         "cluster farming",
         "foundation",
@@ -850,6 +861,8 @@
         "precise tracking",
         "how to reduce shakiness",
         "how to fix shaky aim",
+        "How to reduce shakiness",
+        "How to fix shaky aim",
         "smoothbot",
         "pgti",
         "reactive tracking",
@@ -1657,7 +1670,11 @@
         "useful scenarios for overwatch",
         "good scenarios for ow",
         "what to play for ow",
-        "what do I play for overwatch"
+        "what do I play for overwatch",
+        "useful scenarios for Overwatch",
+        "good scenarios for OW",
+        "what to play for OW",
+        "what do I play for Overwatch"
     ],
     "chunk_23": [
         "Lowtrack",
@@ -1694,7 +1711,8 @@
         "helpful",
         "play",
         "scenarios",
-        "scenarios for soldier 76"
+        "scenarios for soldier 76",
+        "scenarios for Soldier 76"
     ],
     "chunk_24": [
         "Surgeshot Multi",
@@ -1734,7 +1752,8 @@
         "Boltshot",
         "Popshot",
         "scenarios",
-        "scenarios for cassidy"
+        "scenarios for cassidy",
+        "scenarios for Cassidy"
     ],
     "chunk_25": [
         "Lowtrack",
@@ -1777,7 +1796,8 @@
         "play",
         "Popshot",
         "scenarios",
-        "scenarios for Sojourn"
+        "scenarios for Sojourn",
+        "scenarios for sojourn"
     ],
     "chunk_26": [
         "Widow",
@@ -1825,7 +1845,9 @@
         "scenarios",
         "VT",
         "scenarios for widow",
-        "scenarios for widowmaker"
+        "scenarios for widowmaker",
+        "scenarios for Widow",
+        "scenarios for Widowmaker"
     ],
     "chunk_27": [
         "Surgeshot Multi",
@@ -1878,7 +1900,8 @@
         "ashe",
         "scenarios",
         "VT",
-        "scenarios for ashe"
+        "scenarios for ashe",
+        "scenarios for Ashe"
     ],
     "chunk_28": [
         "advanced",
@@ -2025,7 +2048,9 @@
         "VALORANT",
         "valorant",
         "what routines for valorant",
-        "good routines for valorant"
+        "good routines for valorant",
+        "what routines for Valorant",
+        "good routines for Valorant"
     ],
     "chunk_30": [
         "Sky Dots Micro",
