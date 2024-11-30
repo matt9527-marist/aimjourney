@@ -27,7 +27,7 @@ with open('context/chunk_keywords.json', 'r', encoding='utf-8') as f:
 
 # List of specific keywords to ensure inclusion. If found in prompt, will significantly influence which chunk is chosen.
 #* These keywords are highly specific and chosen deliberately to push prompts containing them to top priority
-specific_keywords = ['tension', 'micro', 'pressure', 'flick', 'tense', 'hurts', 'pain',
+specific_keywords = ['tension', 'micro', 'pressure', 'flick', 'tense', 'hurts', 'pain', 'software',
                      'cs', 'Counter Strike', 'csgo', 'rainbow six', 'r6', 'cod', 'call of duty', 'apex', 'Apex Legends', 'dynamic',
                      'precise tracking', 'reactive tracking', 'switching', 'target switching', 'speed', 'evasive', 'stability', 'stable', 'static click',
                      'static', 'bardoz', 'fluidity', 'target priority', 'crosshair placement', 'smoothness', 'smoothly', 'wrist aim', 'arm aim',
@@ -70,7 +70,7 @@ specific_keywords = ['tension', 'micro', 'pressure', 'flick', 'tense', 'hurts', 
 # List of vague keywords to reduce scoring impact
 #* These keywords are too vague and sparse across the data context to provide any good influence on the prompt
 vague_keywords = ['aim', 'aiming', 'improve', 'improvement', 'practice', 'skill', 'train', 'trainer', 'training', 'esport', 'game'
-                  'shooter', 'FPS', 'improving', 'Voltaic', 'VT', 'play', 'playing', 'scenarios', 'maps']
+                  'shooter', 'FPS', 'improving', 'Voltaic', 'VT', 'play', 'playing', 'scenarios', 'maps', 'use', 'games', 'best']
 
 # List of common keywords to slightly skew scoring impact positively.
 #* These keywords will add a slight positive bias to the chunk weight, applied for terms included in frequently asked questions
@@ -150,6 +150,8 @@ faq_strings = [
     "look at the crosshair or at the target",
     "should i use my wrist or arm",
     "wrist or arm to aim",
+    "wrist or arm",
+    "arm or wrist",
     "arm aimer or wrist aimer",
     "does hardware matter",
     "does setup matter",
@@ -170,7 +172,8 @@ faq_strings = [
     "how do you get out of a plateau",
     "do genetics matter",
     "does talent make you a good aimer",
-    "is genetics important"
+    "is genetics important",
+    "optimal sensitivity"
 ]
 
 def extract_keywords(prompt):
@@ -218,8 +221,8 @@ def find_best_matching_chunk(user_prompt):
         scores[chunk_id] = 0  # Initialize score for each chunk
 
          # Add heavy bias for FAQ matches
-        faq_matches = user_keywords.intersection(set(faq_strings))
-        scores[chunk_id] += len(faq_matches) * 20  # High weight for FAQ string matches
+        faq_matches = user_keywords.intersection(set(keywords).intersection(faq_strings))
+        scores[chunk_id] += len(faq_matches) * 15  # High weight for FAQ string matches
 
         # Count specific keyword matches (positive impact)
         specific_matches = user_keywords.intersection(set(keywords).intersection(specific_keywords))
@@ -270,9 +273,9 @@ if __name__ == "__main__":
         # That is, the top listed keyword provided the most impact in selecting the given chunk
         for chunk_id, keywords in chunk_keywords.items():
             # Count FAQ matches (heavy weight)
-            faq_matches = extracted_keywords.intersection(set(faq_strings))
+            faq_matches = extracted_keywords.intersection(set(keywords).intersection(faq_strings))
             for keyword in faq_matches:
-                keyword_scores[keyword] += 20  # Heavy weight for FAQ matches
+                keyword_scores[keyword] += 15  # Heavy weight for FAQ matches
 
             # Count specific keyword matches (positive impact)
             specific_matches = extracted_keywords.intersection(set(keywords).intersection(specific_keywords))
