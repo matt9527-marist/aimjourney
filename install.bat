@@ -45,7 +45,7 @@ if %errorlevel% neq 0 (
 
 :: Install SpaCy
 echo Installing SpaCy...
-pip install spacy --upgrade
+python3 -m pip install spacy
 if %errorlevel% neq 0 (
     echo Failed to install SpaCy. Check your Python and pip setup.
     pause
@@ -54,7 +54,7 @@ if %errorlevel% neq 0 (
 
 :: Install SpaCy Model
 echo Downloading SpaCy English model...
-python -m spacy download en_core_web_sm
+python3 -m spacy download en_core_web_sm
 if %errorlevel% neq 0 (
     echo Failed to download the SpaCy model. Ensure you have an internet connection.
     pause
