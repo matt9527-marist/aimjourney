@@ -2,15 +2,18 @@
   "name": "aim-journey",
   "version": "1.0.0",
   "main": "main.js",
+  "description": "AimJourney Electron App.",
+  "author": "MO/WB @Marist.edu",
+  "license": "ISC",
+  "keywords": ["aim", "journey", "assistant", "electron"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "electron": "^32.1.2",
+    "electron-builder": "^25.1.8",
     "electron-reload": "^2.0.0-alpha.1"
   },
   "dependencies": {
@@ -23,5 +26,19 @@
     "pdf-parse": "^1.1.1",
     "xlsx": "^0.18.5"
   },
-  "description": ""
+  "build": {
+    "appId": "com.yourdomain.aimjourney",
+    "productName": "Aim Journey Assistant",
+    "files": [
+      "**/*",
+      "!node_modules"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    }
+  }
 }
