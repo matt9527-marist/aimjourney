@@ -79,6 +79,5 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-
 echo Installation complete! You can now run launch.bat to start the app.
 pause
