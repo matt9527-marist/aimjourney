@@ -10,15 +10,6 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-:: Install Node.js dependencies
-echo Installing Node.js dependencies...
-npm install
-if %errorlevel% neq 0 (
-    echo Failed to install Node.js dependencies.
-    pause
-    exit /b
-)
-
 :: Check for Python (if applicable)
 echo Checking for Python...
 python --version >nul 2>&1
@@ -75,6 +66,15 @@ echo Installing openpyxl...
 pip install openpyxl --upgrade
 if %errorlevel% neq 0 (
     echo Failed to install openpyxl. Check your Python and pip setup.
+    pause
+    exit /b
+)
+
+:: Install Node.js dependencies
+echo Installing Node.js dependencies...
+npm install
+if %errorlevel% neq 0 (
+    echo Failed to install Node.js dependencies.
     pause
     exit /b
 )
