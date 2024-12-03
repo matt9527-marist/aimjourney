@@ -123,6 +123,7 @@
 
                     // Save to chat data array for Excel
                     if (document.getElementById('debugMode').checked) {
+                        addDebugMessage(data.response);
                         chatData.push({ "User Prompt": userInput, "AI Response": cleanBotResponse });
                         saveToExcel(); // Call the function to save data to Excel file
                     }
@@ -142,58 +143,53 @@
          * @param {string} message - The message to be displayed
          */
          function addMessage(sender, message) {
+	 
+			const chatDiv = document.getElementById('chat');
+			
+			if (message.includes("Sent chunk:") && message.includes("to OpenAI as context.")) {
+				// Remove the "Sent chunk: ..." part
+				const chunkEnd = message.indexOf("to OpenAI as context.") + "to OpenAI as context.".length;
+				message = message.slice(chunkEnd).trim();
+			}
 
-            // Find the chat div where messages are displayed
+			// Clean up the bot response
+			if (sender === 'bot' && message.includes("Returned ChatGPT response:")) {
+				message = message.replace("Returned ChatGPT response:", "").trim(); // Remove the prefix
+			}
+
+			const messageDiv = document.createElement('div');
+			messageDiv.className = 'message ' + sender;
+
+			if (sender === 'user') {
+				messageDiv.innerText = 'You: ' + message; // Display user messages
+			} else {
+				messageDiv.innerText = message; // Display cleaned bot messages
+			}
+
+			chatDiv.appendChild(messageDiv);
+			chatDiv.scrollTop = chatDiv.scrollHeight; // Auto-scroll to the latest message
+			
+		}
+
+        /**
+         * Function to add a debug message that includes the chunk that was sent to OpenAI to the chat UI
+         * @param {string} message - The message to be processed and displayed
+         */
+        function addDebugMessage(message) {
+
             const chatDiv = document.getElementById('chat');
-            const isDebugMode = document.getElementById('debugMode').checked;
 
-            // Check if the message contains "Sent chunk:" and "to OpenAI as context."
-            if (message.includes("Sent chunk:") && message.includes("to OpenAI as context.")) {
-                // Extract the chunk output by locating the starting and ending markers
-                const chunkStart = message.indexOf("Sent chunk:") + "Sent chunk:".length;
-                const chunkEnd = message.indexOf("to OpenAI as context.");
-                const chunkOutput = message.slice(chunkStart, chunkEnd).trim();
-
-                // Extract and clean the ChatGPT response
-                let botResponse = message.slice(chunkEnd + "to OpenAI as context.".length).trim();
-                if (botResponse.startsWith("Returned ChatGPT response:")) {
-                    botResponse = botResponse.replace("Returned ChatGPT response:", "").trim();
-                }
-
-                // Display the chunk output with a label, styled distinctly
-                if (chunkOutput && isDebugMode) {
-                    const chunkDiv = document.createElement('div');
-                    chunkDiv.className = 'message chunk'; // 'chunk' can be styled in CSS for visual distinction
-                    chunkDiv.innerHTML = `<strong>Chunk Output:</strong> ${marked.parse(chunkOutput)}`; // Use marked to parse Markdown
-                    chatDiv.appendChild(chunkDiv);
-                }
-
-                // Display the ChatGPT response with specific styling
-                if (botResponse) {
-                    const responseDiv = document.createElement('div');
-                    responseDiv.className = 'message bot-response'; // Assigning a specific class for bot responses
-                    responseDiv.innerHTML = marked.parse(botResponse); // Use marked to parse Markdown
-                    chatDiv.appendChild(responseDiv);
-                }
-
-            } else {
-                // If format doesn't match, display as a single message, parsing for Markdown
-                const messageDiv = document.createElement('div');
-                messageDiv.className = 'message ' + sender;
-                
-                // Set display style for user messages to be inline
-                if (sender === 'user') {
-                    messageDiv.style.display = 'inline'; // Prevent new line
-                    messageDiv.innerHTML = 'You: ' + message; // Use marked to parse Markdown
-                } else {
-                    messageDiv.innerHTML = marked.parse(message); // Use marked to parse Markdown
-                }
-
-                chatDiv.appendChild(messageDiv);
+            // Clean up the bot response
+			if (message.includes("Returned ChatGPT response:")) {
+                message = message.split("Returned ChatGPT response:")[0].trim(); // remove everything after (and including) "Returned ChatGPT response" 
             }
 
-            // Automatically scroll the chat to the most recent message
-            chatDiv.scrollTop = chatDiv.scrollHeight;
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message chunk';
+            messageDiv.innerText = 'DEBUG: ' + message;
+
+            chatDiv.appendChild(messageDiv);
+			chatDiv.scrollTop = chatDiv.scrollHeight; // Auto-scroll to the latest message
 
         }
 

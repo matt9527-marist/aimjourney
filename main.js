@@ -80,6 +80,7 @@ ipcMain.on('send-message', async (event, message) => {
         model: 'gpt-3.5-turbo', // or use 'gpt-4' if you have access
         messages: [{ role: 'user', content: message }],
       },
+      
       {
         headers: {
           'Content-Type': 'application/json',
