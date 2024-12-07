@@ -41,12 +41,14 @@
    Run Install.bat via ./install
    (Install NodeJS from https://nodejs.org if it is not already)
    Run Launch.bat to start the Axios server on local host.
-   (Or do node server.js, npm run start)
-3. In the Client:
+   (Or do 
+   ```bash
+   node server.js, npm run start)
+3. Input YOUR OpenAI key replacing “???” in the .env file.
+4. In the Client:
    Navigate to “Chat Assistant” and check the “Debug Mode” checkbox
-4. Input YOUR OpenAI key replacing “???” in the .env file.
+5. Try these 5 prompts:
 
-Try these 5 prompts:
 What does our app say about neuroscience and how much muscle memory plays a role in gaming mechanics?
 What should esports players look to do to prevent wrist injuries or tendinopathy?
 What are the three fundamental categories of FPS aiming mechanics as defined by aim theory?
