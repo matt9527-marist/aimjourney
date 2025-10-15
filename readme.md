@@ -35,7 +35,7 @@
 ### Steps:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/AimJourney.git
+   git clone https://github.com/matt9527-marist/aimjourney.git
    cd AimJourney
 2. In the project directory:
    Run Install.bat via ./install
